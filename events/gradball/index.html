@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grad Ball 2027 - Help us</title>
+<meta name="description" content="Want to help with the OIST Grad Ball? Send the Student Council a message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#dde2ec; --card:#f7f8fb; --card-2:#eceff5;
+  --ink:#1d2340; --ink-soft:#4b5272; --rule:#b9c0d3;
+  --plum:#8e2c48; --plum-soft:#f3e3e8;
+  --night:#151a30; --night-ink:#e6e8f2;
+  --serif:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --sans:"Jost","Avenir Next","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --page:#151a30; --card:#1d2340; --card-2:#252c4d; --ink:#e6e8f2; --ink-soft:#a9afc8;
+    --rule:#3a4268; --plum:#e58ba5; --plum-soft:#3a2338; --night:#0f1326; --night-ink:#e6e8f2;
+  }
+}
+:root{--bg:var(--page);--surface:var(--card);--surface-2:var(--card-2);--line:var(--rule);
+  --text:var(--ink);--muted:var(--ink-soft);--accent:var(--plum);--accent-soft:var(--plum-soft)}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans);
+  -webkit-font-smoothing:antialiased}
+a{color:var(--plum);text-underline-offset:3px}
+p{margin:0 0 1em}
+:focus-visible{outline:2px solid var(--plum);outline-offset:3px}
+
+.hero{padding:56px 20px 40px}
+
+.ticket{position:relative;max-width:640px;margin:0 auto;display:grid;grid-template-columns:1fr 190px;
+  background:var(--card);color:var(--ink);border:1px solid var(--rule);border-radius:4px;
+  box-shadow:0 22px 44px -28px rgba(29,35,64,.45)}
+.ticket-main{padding:40px 36px 34px;position:relative}
+.ticket-main::before{content:"";position:absolute;inset:12px 0 12px 12px;border:1px solid var(--rule);border-right:0;pointer-events:none}
+.event{font-family:var(--serif);font-style:italic;font-size:1.1rem;color:var(--ink-soft);margin:0 0 8px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(2.1rem,6vw,2.9rem);line-height:1.05;margin:0 0 16px;
+  font-variation-settings:"opsz" 96;text-wrap:balance}
+.ask{max-width:38ch;margin:0;color:var(--ink-soft)}
+
+.stub{position:relative;border-left:2px dashed var(--rule);padding:34px 20px 30px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:18px;text-align:center}
+.stub::before,.stub::after{content:"";position:absolute;left:-11px;width:20px;height:20px;border-radius:50%;
+  background:var(--bg);border:1px solid var(--rule)}
+.stub::before{top:-11px;clip-path:inset(50% 0 0 0)}
+.stub::after{bottom:-11px;clip-path:inset(0 0 50% 0)}
+.admit{font-family:var(--serif);font-style:italic;font-size:1.25rem;line-height:1.2;margin:0}
+.admit b{display:block;font-style:normal;font-weight:600;font-size:1.9rem;color:var(--plum)}
+.write{display:inline-block;background:var(--plum);color:var(--card);text-decoration:none;font-weight:500;
+  padding:11px 24px;border-radius:999px;white-space:nowrap}
+.write:hover{filter:brightness(1.08)}
+
+.after{max-width:640px;margin:22px auto 0;color:var(--muted);font-size:.95rem;text-align:center}
+.after p{margin:0 0 4px}
+
+@media (prefers-reduced-motion:no-preference){
+  .ticket{animation:arrive .9s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes arrive{from{transform:translateY(18px) rotate(-.8deg)}to{transform:none}}
+}
+@media (max-width:560px){
+  .hero{padding:32px 14px 24px}
+  .ticket{grid-template-columns:1fr}
+  .ticket-main{padding:32px 24px 26px}
+  .ticket-main::before{inset:10px 10px 0 10px;border-right:1px solid var(--rule);border-bottom:0}
+  .stub{border-left:0;border-top:2px dashed var(--rule);flex-direction:row;justify-content:space-between;padding:20px 24px;text-align:left}
+  .stub::before,.stub::after{display:none}
+  .admit b{font-size:1.5rem}
+}
+
+footer{max-width:640px;margin:0 auto;padding:26px 20px 40px;font-size:.9rem;color:var(--muted)}
+footer p{margin:0}
+@media print{.ticket{box-shadow:none}.stub::before,.stub::after{display:none}}
+
+:root[data-theme="dark"]{
+    --page:#151a30; --card:#1d2340; --card-2:#252c4d; --ink:#e6e8f2; --ink-soft:#a9afc8;
+    --rule:#3a4268; --plum:#e58ba5; --plum-soft:#3a2338; --night:#0f1326; --night-ink:#e6e8f2;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap">
+<link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../static/event-frame.css?v=4c67350c">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="sc-wrap bar">
+    <a class="brand" href="../../events/"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1251 584" role="img" aria-label="OIST Student Council logo"><path fill="currentColor" fill-rule="evenodd" d="M939.0 578.5 L297.0 578.5 L291.5 573.0 L291.0 368.5 L262.0 375.5 L237.0 378.5 L236.0 379.5 L229.0 379.5 L228.0 380.5 L219.0 380.5 L218.0 381.5 L190.0 382.5 L189.0 383.5 L117.0 382.5 L116.0 381.5 L106.0 381.5 L105.0 380.5 L97.0 380.5 L96.0 379.5 L71.0 376.5 L35.0 367.5 L32.0 365.5 L11.0 358.5 L6.5 354.0 L5.5 348.0 L6.5 345.0 L10.0 341.5 L18.0 340.5 L43.0 350.5 L67.0 356.5 L88.0 359.5 L89.0 360.5 L114.0 362.5 L115.0 363.5 L129.0 363.5 L130.0 364.5 L191.0 364.5 L192.0 363.5 L208.0 363.5 L209.0 362.5 L228.0 361.5 L229.0 360.5 L236.0 360.5 L237.0 359.5 L243.0 359.5 L261.0 355.5 L266.0 355.5 L271.0 353.5 L288.0 350.5 L291.5 348.0 L291.5 11.0 L298.0 5.5 L937.0 5.5 L940.0 6.5 L944.5 12.0 L944.5 329.0 L982.0 332.5 L1018.0 340.5 L1060.0 356.5 L1115.0 383.5 L1153.0 396.5 L1161.0 397.5 L1170.0 400.5 L1187.0 402.5 L1188.0 403.5 L1195.0 403.5 L1196.0 404.5 L1218.0 405.5 L1219.0 406.5 L1240.0 406.5 L1245.5 413.0 L1245.5 418.0 L1243.5 422.0 L1240.0 424.5 L1207.0 424.5 L1206.0 423.5 L1188.0 422.5 L1187.0 421.5 L1164.0 418.5 L1140.0 412.5 L1107.0 400.5 L1052.0 373.5 L1019.0 360.5 L981.0 351.5 L958.0 349.5 L957.0 348.5 L945.0 348.5 L944.5 572.0 L942.5 576.0 L939.0 578.5Z M721.5 453.0 L731.0 451.5 L739.0 448.5 L748.0 443.5 L760.0 434.5 L781.5 412.0 L820.5 359.0 L831.0 348.5 L841.0 341.5 L849.0 337.5 L868.0 332.5 L883.0 331.5 L884.0 330.5 L896.0 330.5 L897.0 329.5 L925.0 329.5 L926.5 328.0 L926.5 25.0 L310.0 24.5 L310.0 343.5 L336.0 333.5 L367.0 316.5 L392.0 297.5 L418.5 270.0 L436.5 243.0 L445.5 224.0 L452.5 204.0 L457.5 179.0 L458.5 151.0 L462.5 137.0 L469.5 125.0 L476.0 118.5 L484.0 111.5 L493.0 106.5 L509.0 101.5 L517.0 101.5 L518.0 100.5 L536.0 101.5 L556.0 107.5 L562.0 110.5 L566.5 116.0 L565.5 124.0 L562.0 127.5 L559.0 128.5 L556.0 128.5 L546.0 123.5 L531.0 119.5 L510.0 120.5 L497.0 125.5 L486.5 134.0 L480.5 143.0 L476.5 156.0 L476.5 172.0 L478.5 182.0 L483.5 196.0 L492.5 211.0 L500.5 221.0 L541.5 262.0 L555.5 281.0 L563.5 297.0 L567.5 309.0 L572.0 338.5 L580.0 336.5 L602.0 324.5 L619.5 309.0 L631.5 294.0 L648.5 264.0 L649.5 257.0 L658.5 228.0 L674.5 192.0 L688.5 170.0 L704.0 153.5 L714.0 146.5 L726.0 141.5 L746.0 140.5 L757.0 144.5 L763.0 148.5 L771.5 157.0 L780.5 173.0 L784.5 186.0 L786.5 204.0 L787.5 205.0 L787.5 229.0 L786.5 231.0 L782.0 234.5 L777.0 235.5 L774.0 234.5 L769.5 229.0 L769.5 214.0 L768.5 213.0 L768.5 202.0 L767.5 201.0 L766.5 190.0 L762.5 178.0 L756.5 168.0 L752.0 163.5 L744.0 159.5 L731.0 159.5 L722.0 163.5 L714.0 169.5 L703.5 181.0 L687.5 207.0 L671.5 248.0 L664.5 274.0 L659.5 299.0 L657.5 323.0 L656.5 324.0 L656.5 341.0 L655.5 342.0 L656.5 372.0 L657.5 373.0 L657.5 380.0 L661.5 399.0 L667.5 416.0 L677.5 433.0 L688.0 443.5 L703.0 451.5 L713.0 453.5 L721.5 453.0Z M925.5 560.0 L926.5 559.0 L926.5 349.0 L925.0 347.5 L894.0 348.5 L893.0 349.5 L868.0 351.5 L857.0 354.5 L847.0 359.5 L834.5 371.0 L826.5 381.0 L806.5 410.0 L791.5 429.0 L770.0 450.5 L756.0 460.5 L742.0 467.5 L727.0 471.5 L708.0 471.5 L693.0 467.5 L683.0 462.5 L675.0 456.5 L665.5 447.0 L659.5 439.0 L648.5 418.0 L642.5 399.0 L639.5 383.0 L639.5 376.0 L638.5 375.0 L637.5 335.0 L638.5 334.0 L639.0 314.5 L622.0 332.5 L604.0 345.5 L590.0 352.5 L570.5 359.0 L565.5 384.0 L559.5 401.0 L551.5 417.0 L535.5 440.0 L518.0 457.5 L498.0 471.5 L488.0 476.5 L471.0 482.5 L461.0 483.5 L460.0 484.5 L445.0 484.5 L444.0 483.5 L434.0 482.5 L422.0 477.5 L412.5 470.0 L408.5 465.0 L402.5 450.0 L402.5 435.0 L406.5 421.0 L419.5 401.0 L432.0 388.5 L441.0 381.5 L457.0 371.5 L471.0 364.5 L496.0 355.5 L516.0 350.5 L552.5 344.0 L552.5 329.0 L549.5 314.0 L544.5 300.0 L538.5 289.0 L522.5 268.0 L488.5 235.0 L478.5 223.0 L470.0 209.5 L461.5 234.0 L448.5 259.0 L428.5 287.0 L410.0 306.5 L391.0 322.5 L367.0 338.5 L337.0 353.5 L311.0 362.5 L309.5 364.0 L310.0 560.5 L925.5 560.0Z M461.5 465.0 L478.0 460.5 L493.0 452.5 L508.0 441.5 L520.5 429.0 L530.5 416.0 L541.5 396.0 L549.5 373.0 L550.0 363.5 L505.0 372.5 L479.0 381.5 L451.0 397.5 L430.5 417.0 L423.5 429.0 L420.5 439.0 L420.5 447.0 L422.5 453.0 L428.0 459.5 L437.0 464.5 L442.0 465.5 L461.5 465.0Z"/></svg>
+<span>OIST Student Council</span></a>
+    <nav class="nav" aria-label="Main"><a href="../../events/" aria-current="page">Events</a></nav>
+    <button class="theme" type="button" aria-label="Switch between light and dark mode"><span class="theme-label">Dark mode</span></button>
+  </div>
+</header>
+<div class="sc-layout sc-wrap"><nav class="side-nav" aria-label="All events" data-built="2026-11-12"><p class="side-nav-title">All events</p><div data-group="upcoming"><p class="side-group" id="events-upcoming">Upcoming</p><ul aria-labelledby="events-upcoming"><li><a class="teaser" href="../gradball/" aria-current="page">Grad Ball 2027<small>Helpers wanted</small></a></li></ul></div><div data-group="ongoing" hidden><p class="side-group" id="events-ongoing">Ongoing</p><ul aria-labelledby="events-ongoing"></ul></div><div data-group="archived"><p class="side-group" id="events-archived">Archived</p><ul aria-labelledby="events-archived"><li data-start="2026-11-03" data-end="2026-11-03"><a href="../sports-fiesta/">Sports Fiesta 2026</a></li></ul></div></nav><script>
+(function () {
+  var nav = document.querySelector(".side-nav[data-built]");
+  var today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  if (!nav || today <= nav.getAttribute("data-built")) return;
+  var items = [].slice.call(nav.querySelectorAll("li[data-start]"));
+  items.sort(function (a, b) { return a.getAttribute("data-start") < b.getAttribute("data-start") ? -1 : 1; });
+  items.forEach(function (li) {
+    var g = li.getAttribute("data-start") > today ? "upcoming" : li.getAttribute("data-end") >= today ? "ongoing" : "archived";
+    var ul = nav.querySelector('[data-group="' + g + '"] ul');
+    if (li.parentNode === ul) return;
+    if (g === "archived") ul.insertBefore(li, ul.firstChild); else ul.appendChild(li);
+  });
+  [].forEach.call(nav.querySelectorAll("[data-group]"), function (s) { s.hidden = !s.querySelector("li"); });
+})();
+</script><div class="sc-main" id="main">
+
+<header class="hero">
+  <article class="ticket" aria-labelledby="ask">
+    <div class="ticket-main">
+      <p class="event">Grad Ball 2027</p>
+      <h1 id="ask">Want to help with Grad Ball?</h1>
+      <p class="ask">We are putting the evening together and would love a hand. Send us a message and tell us how
+        you would like to help.</p>
+    </div>
+    <div class="stub">
+      <p class="admit">Admit one <b>helper</b></p>
+      <a class="write" id="write" href="mailto:studentcouncil@oist.jp?subject=Helping%20with%20Grad%20Ball%202027&amp;body=Hello%20Student%20Council%2C%0D%0A%0D%0AI%27d%20like%20to%20help%20with%20Grad%20Ball%202027.%0D%0A%0D%0AName%3A%20%0D%0AHow%20I%27d%20like%20to%20help%3A%20%0D%0A">Write to us</a>
+    </div>
+  </article>
+  <div class="after">
+    <p>If the button doesn't open your email, write to <a href="mailto:studentcouncil@oist.jp">studentcouncil@oist.jp</a>.</p>
+    <p>Tickets and details will follow on this page.</p>
+  </div>
+</header>
+
+<footer>
+  <p>Run by the OIST Student Council. Not an official OIST website.</p>
+</footer>
+
+</div></div>
+<script src="../../static/theme.js?v=4c67350c"></script>
+<script data-goatcounter="https://oiststudentcouncil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,1903 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Fiesta 2026 - Results</title>
+<meta name="description" content="OIST Sports Fiesta, 3 November 2026 at Onna Village Community Ground. Results of the Blue vs Orange games and what we raised for the OIST gym.">
+<style>
+:root{
+  --bg:#fbfaf8; --surface:#ffffff; --surface-2:#f4f2ee; --line:#e4e0d8;
+  --text:#1a1917; --muted:#68625a; --accent:#c2410c; --accent-soft:#fdece3;
+  --ok:#2f6d4f; --ok-soft:#e6f2eb; --danger:#a33a2a; --danger-soft:#fbeae7;
+  --radius:14px; --shadow:0 1px 2px rgba(26,25,23,.05), 0 8px 24px rgba(26,25,23,.06);
+  --ink-a:255,112,0; --ink-b:48,96,208;
+  --wash:.09; --art:.12;
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#131211; --surface:#1c1b19; --surface-2:#252320; --line:#37332d;
+    --text:#f3efe9; --muted:#a8a094; --accent:#fb923c; --accent-soft:#2c1d13;
+    --ok:#7fc7a0; --ok-soft:#1c2a22; --danger:#e59182; --danger-soft:#2e1c19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --wash:.075; --art:.16;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.2;margin:0}
+a{color:var(--accent)}
+
+header.hero{padding:60px 0 42px;border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;isolation:isolate}
+header.hero .wrap{position:relative;z-index:1}
+header.hero .fact a{color:#8f2f08}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) header.hero .fact a{color:#ffc48a}
+}
+
+.heroart{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.heroart i{position:absolute;inset:0;display:block}
+.heroart i:first-child{
+  clip-path:polygon(0 0, 58% 0, 42% 100%, 0 100%);
+  background:linear-gradient(150deg,
+    rgba(var(--ink-a),var(--wash)), rgba(var(--ink-a),calc(var(--wash) * .3)));
+}
+.heroart i:last-child{
+  clip-path:polygon(58% 0, 100% 0, 100% 100%, 42% 100%);
+  background:linear-gradient(150deg,
+    rgba(var(--ink-b),calc(var(--wash) * .3)), rgba(var(--ink-b),var(--wash)));
+}
+.heroart i::after{
+  content:"";position:absolute;inset:0;
+  background-repeat:no-repeat;
+  opacity:var(--art);
+}
+.heroart i:first-child::after{background-image:url(design-v1.webp);
+  background-size:auto 155%;background-position:1% 52%}
+.heroart i:last-child::after{background-image:url(design-v2.webp);
+  background-size:auto 96%;background-position:101% 44%;
+  opacity:calc(var(--art) * .8)}
+@media(max-width:640px){
+  .heroart i:first-child::after{background-size:auto 118%;background-position:-12% 52%}
+  .heroart i:last-child::after{background-size:auto 82%;background-position:104% 46%}
+  .heroart i::after{opacity:calc(var(--art) * .7)}
+}
+@media(prefers-reduced-motion:no-preference){}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);
+  background:var(--accent-soft);padding:5px 11px;border-radius:999px;font-weight:600;margin-bottom:18px}
+h1{font-size:clamp(2.1rem,6.5vw,3.4rem);font-weight:750;letter-spacing:-.025em}
+.tagline-lead{margin:14px 0 0;font-size:clamp(1.25rem,3.6vw,1.6rem);font-weight:750;
+  letter-spacing:-.02em;line-height:1.2;color:var(--text)}
+.tagline{color:var(--muted);font-size:1.15rem;margin-top:8px;max-width:54ch}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:26px}
+.fact{display:flex;gap:9px;align-items:flex-start;font-size:.96rem}
+.fact svg{width:17px;height:17px;flex:none;margin-top:4px;stroke:var(--accent);fill:none;stroke-width:1.7}
+.fact b{font-weight:600}
+.fact span{display:block;color:var(--muted);font-size:.87rem}
+
+section{padding:42px 0;border-bottom:1px solid var(--line)}
+section h2{font-size:1.35rem;font-weight:650;letter-spacing:-.01em;margin-bottom:16px}
+.prose p{margin:0 0 14px;color:var(--muted)}
+.prose p:last-child{margin-bottom:0}
+.prose strong{color:var(--text)}
+
+.fold{margin-top:20px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface);overflow:hidden}
+.fold summary{padding:14px 18px;cursor:pointer;font-weight:600;font-size:.95rem;
+  list-style:none;display:flex;align-items:center;gap:11px;transition:background .15s}
+.fold summary::-webkit-details-marker{display:none}
+.fold summary::before{content:"+";display:inline-flex;align-items:center;justify-content:center;
+  width:21px;height:21px;flex:none;border-radius:50%;background:var(--accent-soft);
+  color:var(--accent);font-weight:700;font-size:1.05rem;line-height:1}
+.fold[open] summary::before{content:"\2013"}
+.fold summary:hover{background:var(--surface-2)}
+.fold summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.fold .prose{padding:0 18px 16px}
+
+.sizeguide{margin-top:14px}
+.sizeguide-body{padding:0 14px 16px}
+.sizeguide-body .hint{margin:0 0 10px}
+.tablewrap{overflow-x:auto}
+.sizetable{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
+.sizetable th,.sizetable td{padding:7px 5px;text-align:center;border-top:1px solid var(--line)}
+.sizetable thead th{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.02em;
+  color:var(--muted);background:var(--surface-2);border-top:0;vertical-align:bottom}
+.sizetable tbody th{text-align:left;font-weight:700}
+.games{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.game{background:var(--surface-2);border:1px solid var(--line);border-radius:999px;
+  padding:6px 13px;font-size:.9rem;font-weight:500}
+
+.schedule{list-style:none;margin:0;padding:0}
+.schedule > li{display:flex;gap:18px;padding:12px 0;border-top:1px dashed var(--line)}
+.schedule > li:first-child{border-top:0}
+.sched-body{min-width:0}
+.sched-what{font-weight:650}
+.sched-detail{margin:4px 0 0;color:var(--muted);font-size:.93rem}
+.sched-items{margin:7px 0 0;padding-left:20px;font-size:.93rem}
+.sched-items li{padding:2px 0}
+.schedule time{font-variant-numeric:tabular-nums;font-weight:600;color:var(--accent);flex:none;min-width:74px}
+
+.shuttle{margin:0 0 26px}
+.subh{font-size:1.05rem;font-weight:650;margin:0 0 10px}
+.shuttle-intro{margin:0 0 12px;color:var(--muted);font-size:.92rem}
+.shuttle-legs{display:grid;gap:16px}
+@media(min-width:640px){.shuttle-legs{grid-template-columns:1fr 1fr}}
+.shuttle-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shuttle-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.shuttle-table caption{caption-side:top;text-align:left;font-weight:600;font-size:.93rem;padding:11px 12px 9px}
+.shuttle-table th{font-size:.74rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);
+  text-align:left;padding:8px 12px;background:var(--surface-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.shuttle-table td{padding:8px 12px;border-top:1px dashed var(--line)}
+.shuttle-table tbody tr:first-child td{border-top:0}
+.shuttle-table td:first-child{color:var(--muted);width:3.4em}
+.shuttle-table td:nth-child(2){font-weight:700}
+.shuttle-table .est{font-weight:500;text-transform:none;letter-spacing:0}
+.footnote{margin:24px 0 0;font-size:.86rem;color:var(--muted);line-height:1.55}
+
+.donate-card{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;
+  padding:18px 20px;background:var(--surface);border:2px solid var(--accent);
+  border-radius:var(--radius);box-shadow:0 12px 32px rgba(0,0,0,.28);
+  font-size:1.05rem;line-height:1.5;max-width:620px}
+.donate-text{flex:1 1 230px}
+.donate-btn{flex:none;display:inline-block;background:var(--accent);color:var(--bg);
+  font-weight:750;text-decoration:none;padding:11px 24px;border-radius:999px}
+.donate-btn:hover{filter:brightness(1.08)}
+.donate-btn:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+
+.res-winner{position:relative;overflow:hidden;isolation:isolate;margin:0 0 22px;
+  padding:26px 22px 20px;border-radius:calc(var(--radius) + 4px);color:#fff;
+  box-shadow:0 18px 40px rgba(0,0,0,.22)}
+.res-winner.orange{background:linear-gradient(135deg,#e2580a 0%,#c2410c 55%,#9a330a 100%)}
+.res-winner.blue{background:linear-gradient(135deg,#3a6fe0 0%,#2f5fc8 55%,#22448f 100%)}
+.res-winner.tie{background:linear-gradient(110deg,#c2410c 0%,#c2410c 45%,#2f5fc8 55%,#2f5fc8 100%)}
+.champ-art{position:absolute;z-index:-1;right:-8%;top:-14%;width:72%;height:140%;
+  background-repeat:no-repeat;background-position:right center;background-size:contain;
+  filter:brightness(0) invert(1);opacity:.26;transform:rotate(-4deg)}
+.res-winner.orange .champ-art{background-image:url(design-v1.webp)}
+.res-winner.blue .champ-art{background-image:url(design-v2.webp);opacity:.14}
+.champ-kicker{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.35);padding:4px 11px 4px 6px;border-radius:999px}
+.champ-kicker b{display:inline-grid;place-items:center;height:1.7em;padding:0 6px;border-radius:6px;
+  background:#fff;color:#9a330a;font-size:.95rem;letter-spacing:0}
+.res-winner.blue .champ-kicker b{color:#22448f}
+.champ-team{margin:14px 0 0;font-size:clamp(2.2rem,8vw,3.3rem);font-weight:800;letter-spacing:-.03em;line-height:1}
+.champ-sub{margin:6px 0 0;font-size:1.05rem;font-weight:600;opacity:.95}
+.champ-bar{display:flex;gap:3px;margin:22px 0 0;height:34px;border-radius:999px;overflow:hidden;
+  background:rgba(0,0,0,.18);font-size:.86rem;font-weight:750;font-variant-numeric:tabular-nums}
+.champ-bar span{display:flex;align-items:center;padding:0 12px;white-space:nowrap;min-width:0;flex-basis:0;
+  transition:flex-grow 1.1s cubic-bezier(.2,.8,.2,1)}
+.champ-bar .b{background:#2f5fc8;justify-content:flex-start}
+.champ-bar .o{background:#fff;color:#9a330a;justify-content:flex-end}
+.res-winner.blue .champ-bar .b{background:#fff;color:#22448f}
+.res-winner.blue .champ-bar .o{background:#c2410c;color:#fff}
+.champ-bar.start span{flex-grow:1 !important}
+.champ-foot{margin:8px 0 0;font-size:.82rem;opacity:.9}
+
+header.hero.won-a .heroart i:first-child{clip-path:polygon(0 0, 84% 0, 70% 100%, 0 100%)}
+header.hero.won-a .heroart i:last-child{clip-path:polygon(84% 0, 100% 0, 100% 100%, 70% 100%)}
+header.hero.won-a .heroart i:first-child{
+  background:linear-gradient(150deg, rgba(var(--ink-a),calc(var(--wash) * 2.2)), rgba(var(--ink-a),calc(var(--wash) * .9)))}
+header.hero.won-a .heroart i:first-child::after{opacity:calc(var(--art) * 1.5)}
+header.hero.won-b .heroart i:last-child{
+  background:linear-gradient(150deg, rgba(var(--ink-b),calc(var(--wash) * .9)), rgba(var(--ink-b),calc(var(--wash) * 2.2)))}
+header.hero.won-b .heroart i:first-child{clip-path:polygon(0 0, 30% 0, 16% 100%, 0 100%)}
+header.hero.won-b .heroart i:last-child{clip-path:polygon(30% 0, 100% 0, 100% 100%, 16% 100%)}
+@media(prefers-reduced-motion:no-preference){
+  .heroart i{transition:clip-path 1.4s cubic-bezier(.2,.8,.2,1)}
+}
+@media(prefers-reduced-motion:reduce){ .champ-bar span{transition:none} }
+
+.gallery{columns:3 160px;column-gap:10px;margin-top:6px}
+.gallery button{display:block;width:100%;margin:0 0 10px;padding:0;border:0;cursor:zoom-in;
+  background:var(--surface-2);border-radius:12px;overflow:hidden;break-inside:avoid;position:relative}
+.gallery img{display:block;width:100%;height:auto;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.gallery button:hover img{transform:scale(1.045)}
+.gallery button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.gallery-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.gallery-actions:empty{display:none}
+.gbtn{font:inherit;font-weight:650;font-size:.95rem;padding:10px 20px;border-radius:999px;cursor:pointer;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);text-decoration:none}
+.gbtn:hover{border-color:var(--accent)}
+dialog.gview{width:100vw;height:100vh;max-width:none;max-height:none;margin:0;padding:0;border:0;
+  background:rgba(8,8,8,.94);color:#fff}
+dialog.gview[open]{display:flex;align-items:center;justify-content:center}
+dialog.gview::backdrop{background:rgba(0,0,0,.6)}
+.gview figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:10px;
+  max-width:calc(100vw - 32px);max-height:calc(100vh - 32px)}
+.gview img{max-width:100%;max-height:calc(100vh - 80px);object-fit:contain;border-radius:8px;
+  user-select:none;-webkit-user-drag:none}
+.gview figcaption{font-size:.85rem;opacity:.75;font-variant-numeric:tabular-nums}
+.gv-nav,.gv-close{position:absolute;border:0;cursor:pointer;color:#fff;background:rgba(255,255,255,.12);
+  display:grid;place-items:center;border-radius:999px;font:inherit;line-height:1}
+.gv-nav{top:50%;transform:translateY(-50%);width:46px;height:46px;font-size:2rem;padding-bottom:4px}
+.gv-prev{left:14px} .gv-next{right:14px}
+.gv-close{top:14px;right:14px;width:42px;height:42px;font-size:1.7rem;z-index:1}
+.gv-nav:hover,.gv-close:hover{background:rgba(255,255,255,.24)}
+.gv-nav:focus-visible,.gv-close:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(max-width:640px){ .gv-nav{top:auto;bottom:16px;transform:none} }
+
+:root{--team-b:#2f5fc8;--team-o:#e2580a;--tx-b:#2f5fc8;--tx-o:#c2410c}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--tx-b:#8fb0f5;--tx-o:#fb923c}
+}
+.split{display:flex;gap:2px;height:6px;border-radius:999px;overflow:hidden;background:var(--surface-2)}
+.split i{display:block;flex-basis:0;min-width:0;transition:flex-grow 1s cubic-bezier(.2,.8,.2,1)}
+.split .b{background:var(--team-b)}
+.split .o{background:var(--team-o)}
+.split .lose{opacity:.32}
+.split.start i{flex-grow:1 !important}
+@media(prefers-reduced-motion:reduce){ .split i{transition:none} }
+.tb{color:var(--tx-b)} .to{color:var(--tx-o)}
+
+.res-band{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);margin:0 0 34px;background:var(--surface);
+  border:1px solid var(--line);border-radius:calc(var(--radius) + 4px);box-shadow:var(--shadow);overflow:hidden}
+.res-band .fig{padding:18px 20px 16px;min-width:0}
+.res-band .fig + .fig{border-left:1px solid var(--line)}
+.res-band b{display:block;font-size:clamp(2rem,6vw,2.6rem);font-weight:800;letter-spacing:-.03em;
+  line-height:1.05;font-variant-numeric:tabular-nums}
+.res-band .lbl{display:block;color:var(--muted);font-size:.92rem;margin-top:3px}
+.res-band .split{margin:14px 0 6px}
+.res-band .teams{display:flex;justify-content:space-between;font-size:.8rem;font-weight:700}
+.res-band .fig-note{display:block;color:var(--muted);font-size:.8rem;line-height:1.4;margin-top:12px}
+.res-band b.pending{color:transparent;width:6.5ch;border-radius:10px;
+  background:linear-gradient(90deg,var(--surface-2) 25%,var(--line) 50%,var(--surface-2) 75%);
+  background-size:300% 100%;animation:shimmer 1.4s linear infinite}
+@keyframes shimmer{from{background-position:100% 0}to{background-position:0 0}}
+@media(prefers-reduced-motion:reduce){ .res-band b.pending{animation:none} }
+@media(max-width:520px){
+  .res-band{grid-auto-flow:row}
+  .res-band .fig + .fig{border-left:0;border-top:1px solid var(--line)}
+}
+
+.rg-head{display:flex;align-items:baseline;justify-content:space-between;gap:4px 16px;flex-wrap:wrap}
+.rg-head h3{font-size:1.15rem;font-weight:750}
+.rg-head p{margin:0;color:var(--muted);font-size:.9rem}
+.rg-legend,.rg{display:grid;grid-template-columns:3.6rem minmax(0,1fr) 3.6rem;align-items:center;gap:12px}
+.rg-legend{margin-top:10px;padding:0 0 8px;border-bottom:1px solid var(--line);
+  font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.rg-round{display:flex;align-items:center;gap:10px;margin:16px 0 2px;color:var(--muted);
+  font-size:.72rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase}
+.rg-round::before,.rg-round::after{content:"";flex:1;height:1px;background:var(--line)}
+.rg{padding:10px 0;border-bottom:1px dashed var(--line)}
+.rg:last-child{border-bottom:0}
+.rg .sc{display:grid;place-items:center;height:2.7rem;border-radius:12px;border:1px solid var(--line);
+  font-size:1.2rem;font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted)}
+.rg .sc.win{color:#fff;border-color:transparent;font-weight:800}
+.rg .sc.b.win{background:var(--team-b)}
+.rg .sc.o.win{background:var(--team-o)}
+.rg.draw .sc{color:var(--text)}
+.rg .mid{text-align:center;min-width:0}
+.rg .nm{display:block;font-weight:650;line-height:1.25}
+.rg .split{margin:8px 0 5px}
+.rg .mg{display:block;font-size:.8rem;font-weight:650;color:var(--muted)}
+.rg.win-b .mg{color:var(--tx-b)}
+.rg.win-o .mg{color:var(--tx-o)}
+.footnote b{color:var(--text);font-weight:600}
+
+.ticket{display:flex;align-items:center;gap:16px;padding:16px;border:1px solid var(--line);
+  border-radius:var(--radius);background:var(--surface);margin-bottom:10px;transition:border-color .15s}
+.ticket.chosen{border-color:var(--accent)}
+.ticket-info{flex:1;min-width:0}
+.ticket-name{font-weight:600}
+.ticket-note{color:var(--muted);font-size:.87rem}
+.ticket-price{font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.stepper{display:flex;align-items:center;gap:2px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);flex:none}
+.stepper button{width:44px;height:44px;border:0;background:transparent;color:var(--text);font-size:1.25rem;
+  cursor:pointer;border-radius:8px;line-height:1}
+.stepper button:hover:not(:disabled){background:var(--accent-soft);color:var(--accent)}
+.stepper button:disabled{opacity:.3;cursor:default}
+.stepper input{width:40px;border:0;background:transparent;color:var(--text);text-align:center;
+  font:inherit;font-variant-numeric:tabular-nums;font-weight:600;-moz-appearance:textfield;padding:0}
+.stepper input::-webkit-outer-spin-button,.stepper input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+
+.stocknote,.pricenote{margin:0 0 12px;padding:10px 13px;border-radius:10px;font-size:.88rem;
+  background:var(--accent-soft);color:var(--text);border-left:3px solid var(--accent)}
+.shirtver{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+  padding:14px;margin-bottom:12px;transition:border-color .15s}
+.shirtver.chosen{border-color:var(--accent)}
+.shirthead{display:flex;gap:14px;align-items:center;margin-bottom:13px}
+.shirtimg{width:92px;height:92px;flex:none;border-radius:10px;object-fit:contain;
+  background:var(--surface-2);cursor:zoom-in;border:0}
+.shirtname{font-weight:650}
+.shirtdesc{color:var(--muted);font-size:.86rem}
+.shirtcount{margin-left:auto;flex:none;font-weight:700;font-variant-numeric:tabular-nums;
+  color:var(--accent);font-size:.95rem}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;
+  justify-content:center;padding:24px;z-index:50;cursor:zoom-out}
+.lightbox.show{display:flex}
+.lightbox img{max-width:100%;max-height:100%;border-radius:10px}
+
+.ticket-shirts{display:flex;gap:12px;flex:none}
+@media(min-width:640px){
+  .ticket.has-shirts .ticket-info{flex:0 1 auto}
+  .ticket-shirts{margin-right:auto}
+}
+@media(max-width:639px){
+  .ticket.has-shirts{flex-wrap:wrap;row-gap:12px}
+  .ticket-shirts{order:9;flex-basis:100%}
+}
+.ticket-shirts button{position:relative;padding:0;border:0;background:none;line-height:0;
+  cursor:zoom-in;border-radius:10px}
+.ticket-shirts img{width:56px;height:56px;object-fit:contain;border-radius:10px;
+  background:var(--surface-2);border:1px solid var(--line);transition:border-color .15s}
+.ticket-shirts button:hover img{border-color:var(--accent)}
+.ticket-shirts button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.zoomicon{position:absolute;right:-5px;bottom:-5px;width:22px;height:22px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--surface);border:1px solid var(--line);color:var(--text)}
+.sizegrid{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(178px,1fr))}
+.sizerow{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:8px 10px 8px 15px;border:1px solid var(--line);border-radius:12px;
+  background:var(--surface);transition:border-color .15s}
+.sizerow.chosen{border-color:var(--accent)}
+.sizename{font-weight:600;font-variant-numeric:tabular-nums}
+.hint.warn{color:var(--accent);font-weight:600}
+.donate{display:flex;align-items:center;gap:14px;padding:16px;border:1px dashed var(--line);
+  border-radius:var(--radius);background:var(--surface-2);margin-top:6px}
+.donate .ticket-info{flex:1}
+.donate-input{display:flex;align-items:center;gap:6px;flex:none}
+.donate-input span{color:var(--muted);font-weight:600}
+.donate-input input{width:96px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;
+  background:var(--surface);color:var(--text);font:inherit;font-variant-numeric:tabular-nums;text-align:right}
+
+.total{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;padding-top:16px;border-top:2px solid var(--line)}
+.total-label{font-weight:600}
+.total-amount{font-size:1.6rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+.field{margin-bottom:16px}
+label.lbl,span.lbl{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.req{color:var(--danger)}
+input[type=text],input[type=email],input[type=tel],textarea{
+  width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;
+  background:var(--surface);color:var(--text);font:inherit}
+textarea{min-height:80px;resize:vertical}
+input:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+.hint{color:var(--muted);font-size:.84rem;margin-top:5px}
+
+.pay-opts{display:grid;gap:10px}
+@media(min-width:520px){.pay-opts{grid-template-columns:1fr 1fr}}
+.pay{display:flex;gap:11px;padding:14px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface);cursor:pointer;transition:border-color .15s}
+.pay:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.pay input{margin-top:4px;accent-color:var(--accent);flex:none}
+.pay-title{font-weight:600}
+.pay-desc{color:var(--muted);font-size:.85rem}
+
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.89rem;color:var(--muted)}
+.consent input{margin-top:5px;accent-color:var(--accent);flex:none}
+
+button.submit{width:100%;padding:15px;border:0;border-radius:var(--radius);background:var(--accent);
+  color:#fff;font:inherit;font-weight:650;font-size:1.02rem;cursor:pointer;margin-top:22px}
+button.submit:hover:not(:disabled){filter:brightness(1.08)}
+button.submit:disabled{opacity:.55;cursor:default}
+
+.alert{padding:13px 15px;border-radius:10px;font-size:.9rem;margin-top:14px;display:none}
+.alert.err{background:var(--danger-soft);color:var(--danger);border:1px solid var(--danger);display:block}
+.alert.warn{background:var(--accent-soft);color:var(--text);border:1px solid var(--accent);display:block}
+@media(max-width:430px){
+  .ticket{gap:10px;padding:14px 12px}
+  .ticket-price{font-size:.95rem}
+  .sizerow{padding:6px 8px 6px 12px;gap:8px}
+}
+
+.done{display:none}
+.done.show{display:block}
+.done-badge{display:inline-flex;align-items:center;gap:8px;background:var(--ok-soft);color:var(--ok);
+  padding:7px 14px;border-radius:999px;font-weight:600;font-size:.9rem;margin-bottom:18px}
+.payslip{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px;margin:18px 0;box-shadow:var(--shadow)}
+.payrow{display:flex;justify-content:space-between;gap:20px;padding:9px 0;border-top:1px dashed var(--line)}
+.payrow:first-child{border-top:0}
+.payrow dt{color:var(--muted);font-size:.89rem;flex:none}
+.payrow dd{margin:0;font-weight:600;text-align:right;word-break:break-word;font-variant-numeric:tabular-nums}
+.ref{font-size:1.05rem;color:var(--accent);letter-spacing:.04em}
+.callout{background:var(--accent-soft);border-left:3px solid var(--accent);padding:13px 16px;
+  border-radius:0 10px 10px 0;font-size:.92rem;margin-top:16px}
+.doneactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.copybtn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.copybtn.primary:hover{filter:brightness(1.08);background:var(--accent);color:#fff}
+.copybtn{margin-top:0;padding:12px 18px;border:1px solid var(--accent);
+  border-radius:12px;background:transparent;color:var(--accent);font:inherit;font-weight:600;
+  cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.copybtn:hover{background:var(--accent);color:#fff}
+.copybtn.done{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.copyfallback{width:100%;margin-top:12px;min-height:190px;padding:12px;border:1px solid var(--line);
+  border-radius:10px;background:var(--surface);color:var(--text);
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.82rem;line-height:1.5}
+dl{margin:0}
+footer{padding:32px 0 30px;color:var(--muted);font-size:.86rem}
+
+.hero, .ink-rule{position:relative}
+.hero::after, .ink-rule::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg, rgb(var(--ink-a)), rgb(var(--ink-b)));
+}
+footer p{margin:0 0 8px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+:root[data-theme="dark"]{
+    --bg:#131211; --surface:#1c1b19; --surface-2:#252320; --line:#37332d;
+    --text:#f3efe9; --muted:#a8a094; --accent:#fb923c; --accent-soft:#2c1d13;
+    --ok:#7fc7a0; --ok-soft:#1c2a22; --danger:#e59182; --danger-soft:#2e1c19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+    --wash:.075; --art:.16;
+  }
+:root[data-theme="dark"] header.hero .fact a{color:#ffc48a}
+:root[data-theme="dark"]{--tx-b:#8fb0f5;--tx-o:#fb923c}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap">
+<link rel="icon" href="../../static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../static/event-frame.css?v=4c67350c">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="sc-wrap bar">
+    <a class="brand" href="../../events/"><svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1251 584" role="img" aria-label="OIST Student Council logo"><path fill="currentColor" fill-rule="evenodd" d="M939.0 578.5 L297.0 578.5 L291.5 573.0 L291.0 368.5 L262.0 375.5 L237.0 378.5 L236.0 379.5 L229.0 379.5 L228.0 380.5 L219.0 380.5 L218.0 381.5 L190.0 382.5 L189.0 383.5 L117.0 382.5 L116.0 381.5 L106.0 381.5 L105.0 380.5 L97.0 380.5 L96.0 379.5 L71.0 376.5 L35.0 367.5 L32.0 365.5 L11.0 358.5 L6.5 354.0 L5.5 348.0 L6.5 345.0 L10.0 341.5 L18.0 340.5 L43.0 350.5 L67.0 356.5 L88.0 359.5 L89.0 360.5 L114.0 362.5 L115.0 363.5 L129.0 363.5 L130.0 364.5 L191.0 364.5 L192.0 363.5 L208.0 363.5 L209.0 362.5 L228.0 361.5 L229.0 360.5 L236.0 360.5 L237.0 359.5 L243.0 359.5 L261.0 355.5 L266.0 355.5 L271.0 353.5 L288.0 350.5 L291.5 348.0 L291.5 11.0 L298.0 5.5 L937.0 5.5 L940.0 6.5 L944.5 12.0 L944.5 329.0 L982.0 332.5 L1018.0 340.5 L1060.0 356.5 L1115.0 383.5 L1153.0 396.5 L1161.0 397.5 L1170.0 400.5 L1187.0 402.5 L1188.0 403.5 L1195.0 403.5 L1196.0 404.5 L1218.0 405.5 L1219.0 406.5 L1240.0 406.5 L1245.5 413.0 L1245.5 418.0 L1243.5 422.0 L1240.0 424.5 L1207.0 424.5 L1206.0 423.5 L1188.0 422.5 L1187.0 421.5 L1164.0 418.5 L1140.0 412.5 L1107.0 400.5 L1052.0 373.5 L1019.0 360.5 L981.0 351.5 L958.0 349.5 L957.0 348.5 L945.0 348.5 L944.5 572.0 L942.5 576.0 L939.0 578.5Z M721.5 453.0 L731.0 451.5 L739.0 448.5 L748.0 443.5 L760.0 434.5 L781.5 412.0 L820.5 359.0 L831.0 348.5 L841.0 341.5 L849.0 337.5 L868.0 332.5 L883.0 331.5 L884.0 330.5 L896.0 330.5 L897.0 329.5 L925.0 329.5 L926.5 328.0 L926.5 25.0 L310.0 24.5 L310.0 343.5 L336.0 333.5 L367.0 316.5 L392.0 297.5 L418.5 270.0 L436.5 243.0 L445.5 224.0 L452.5 204.0 L457.5 179.0 L458.5 151.0 L462.5 137.0 L469.5 125.0 L476.0 118.5 L484.0 111.5 L493.0 106.5 L509.0 101.5 L517.0 101.5 L518.0 100.5 L536.0 101.5 L556.0 107.5 L562.0 110.5 L566.5 116.0 L565.5 124.0 L562.0 127.5 L559.0 128.5 L556.0 128.5 L546.0 123.5 L531.0 119.5 L510.0 120.5 L497.0 125.5 L486.5 134.0 L480.5 143.0 L476.5 156.0 L476.5 172.0 L478.5 182.0 L483.5 196.0 L492.5 211.0 L500.5 221.0 L541.5 262.0 L555.5 281.0 L563.5 297.0 L567.5 309.0 L572.0 338.5 L580.0 336.5 L602.0 324.5 L619.5 309.0 L631.5 294.0 L648.5 264.0 L649.5 257.0 L658.5 228.0 L674.5 192.0 L688.5 170.0 L704.0 153.5 L714.0 146.5 L726.0 141.5 L746.0 140.5 L757.0 144.5 L763.0 148.5 L771.5 157.0 L780.5 173.0 L784.5 186.0 L786.5 204.0 L787.5 205.0 L787.5 229.0 L786.5 231.0 L782.0 234.5 L777.0 235.5 L774.0 234.5 L769.5 229.0 L769.5 214.0 L768.5 213.0 L768.5 202.0 L767.5 201.0 L766.5 190.0 L762.5 178.0 L756.5 168.0 L752.0 163.5 L744.0 159.5 L731.0 159.5 L722.0 163.5 L714.0 169.5 L703.5 181.0 L687.5 207.0 L671.5 248.0 L664.5 274.0 L659.5 299.0 L657.5 323.0 L656.5 324.0 L656.5 341.0 L655.5 342.0 L656.5 372.0 L657.5 373.0 L657.5 380.0 L661.5 399.0 L667.5 416.0 L677.5 433.0 L688.0 443.5 L703.0 451.5 L713.0 453.5 L721.5 453.0Z M925.5 560.0 L926.5 559.0 L926.5 349.0 L925.0 347.5 L894.0 348.5 L893.0 349.5 L868.0 351.5 L857.0 354.5 L847.0 359.5 L834.5 371.0 L826.5 381.0 L806.5 410.0 L791.5 429.0 L770.0 450.5 L756.0 460.5 L742.0 467.5 L727.0 471.5 L708.0 471.5 L693.0 467.5 L683.0 462.5 L675.0 456.5 L665.5 447.0 L659.5 439.0 L648.5 418.0 L642.5 399.0 L639.5 383.0 L639.5 376.0 L638.5 375.0 L637.5 335.0 L638.5 334.0 L639.0 314.5 L622.0 332.5 L604.0 345.5 L590.0 352.5 L570.5 359.0 L565.5 384.0 L559.5 401.0 L551.5 417.0 L535.5 440.0 L518.0 457.5 L498.0 471.5 L488.0 476.5 L471.0 482.5 L461.0 483.5 L460.0 484.5 L445.0 484.5 L444.0 483.5 L434.0 482.5 L422.0 477.5 L412.5 470.0 L408.5 465.0 L402.5 450.0 L402.5 435.0 L406.5 421.0 L419.5 401.0 L432.0 388.5 L441.0 381.5 L457.0 371.5 L471.0 364.5 L496.0 355.5 L516.0 350.5 L552.5 344.0 L552.5 329.0 L549.5 314.0 L544.5 300.0 L538.5 289.0 L522.5 268.0 L488.5 235.0 L478.5 223.0 L470.0 209.5 L461.5 234.0 L448.5 259.0 L428.5 287.0 L410.0 306.5 L391.0 322.5 L367.0 338.5 L337.0 353.5 L311.0 362.5 L309.5 364.0 L310.0 560.5 L925.5 560.0Z M461.5 465.0 L478.0 460.5 L493.0 452.5 L508.0 441.5 L520.5 429.0 L530.5 416.0 L541.5 396.0 L549.5 373.0 L550.0 363.5 L505.0 372.5 L479.0 381.5 L451.0 397.5 L430.5 417.0 L423.5 429.0 L420.5 439.0 L420.5 447.0 L422.5 453.0 L428.0 459.5 L437.0 464.5 L442.0 465.5 L461.5 465.0Z"/></svg>
+<span>OIST Student Council</span></a>
+    <nav class="nav" aria-label="Main"><a href="../../events/" aria-current="page">Events</a></nav>
+    <button class="theme" type="button" aria-label="Switch between light and dark mode"><span class="theme-label">Dark mode</span></button>
+  </div>
+</header>
+<div class="sc-layout sc-wrap"><nav class="side-nav" aria-label="All events" data-built="2026-11-12"><p class="side-nav-title">All events</p><div data-group="upcoming"><p class="side-group" id="events-upcoming">Upcoming</p><ul aria-labelledby="events-upcoming"><li><a class="teaser" href="../gradball/">Grad Ball 2027<small>Helpers wanted</small></a></li></ul></div><div data-group="ongoing" hidden><p class="side-group" id="events-ongoing">Ongoing</p><ul aria-labelledby="events-ongoing"></ul></div><div data-group="archived"><p class="side-group" id="events-archived">Archived</p><ul aria-labelledby="events-archived"><li data-start="2026-11-03" data-end="2026-11-03"><a href="../sports-fiesta/" aria-current="page">Sports Fiesta 2026</a></li></ul></div></nav><script>
+(function () {
+  var nav = document.querySelector(".side-nav[data-built]");
+  var today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+  if (!nav || today <= nav.getAttribute("data-built")) return;
+  var items = [].slice.call(nav.querySelectorAll("li[data-start]"));
+  items.sort(function (a, b) { return a.getAttribute("data-start") < b.getAttribute("data-start") ? -1 : 1; });
+  items.forEach(function (li) {
+    var g = li.getAttribute("data-start") > today ? "upcoming" : li.getAttribute("data-end") >= today ? "ongoing" : "archived";
+    var ul = nav.querySelector('[data-group="' + g + '"] ul');
+    if (li.parentNode === ul) return;
+    if (g === "archived") ul.insertBefore(li, ul.firstChild); else ul.appendChild(li);
+  });
+  [].forEach.call(nav.querySelectorAll("[data-group]"), function (s) { s.hidden = !s.querySelector("li"); });
+})();
+</script><div class="sc-main" id="main">
+
+
+<header class="hero">
+  <div class="heroart" aria-hidden="true"><i></i><i></i></div>
+  <div class="wrap">
+    <span class="eyebrow" id="c-eyebrow"></span>
+    <h1 id="c-name"></h1>
+    <p class="tagline-lead" id="c-taglead"></p>
+    <p class="tagline" id="c-tagline"></p>
+    <div class="facts" id="c-facts"></div>
+    <p class="callout" id="c-notice" hidden style="margin:22px 0 0;position:relative"></p>
+  </div>
+</header>
+
+<section id="s-results" hidden>
+  <div class="wrap">
+    <h2 id="c-resultsh"></h2>
+    <div class="res-winner" id="c-reswinner" hidden></div>
+    <div class="res-band" id="c-resstats"></div>
+    <div class="res-games" id="c-resgames"></div>
+  </div>
+</section>
+
+<section id="s-gallery" hidden>
+  <div class="wrap">
+    <h2 id="c-galleryh"></h2>
+    <div class="gallery" id="c-gallery"></div>
+    <div class="gallery-actions" id="c-galleryactions"></div>
+  </div>
+</section>
+
+<dialog class="gview" id="gview" aria-label="Photo viewer">
+  <button type="button" class="gv-close" id="gvClose" aria-label="Close">&times;</button>
+  <button type="button" class="gv-nav gv-prev" id="gvPrev" aria-label="Previous photo">&#8249;</button>
+  <figure><img id="gvImg" alt=""><figcaption id="gvCount"></figcaption></figure>
+  <button type="button" class="gv-nav gv-next" id="gvNext" aria-label="Next photo">&#8250;</button>
+</dialog>
+
+<section id="s-about">
+  <div class="wrap">
+    <h2 id="c-abouth"></h2>
+    <div class="prose" id="c-about"></div>
+    <div class="games" id="c-games"></div>
+  </div>
+</section>
+
+
+<section id="s-signup">
+  <div class="wrap">
+
+    <div id="formPanel">
+      <h2>Sign up</h2>
+      <div class="prose" style="margin-bottom:20px"><p id="c-signupintro"></p></div>
+
+      <form id="signupForm" name="registration" method="POST">
+        <input type="hidden" name="order" id="f-order">
+        <input type="hidden" name="amount" id="f-amount">
+        <input type="hidden" name="shirtSizes" id="f-shirtsizes">
+        <input type="hidden" name="confirmDuplicate" id="f-confirmdup" value="">
+        <p class="sr"><label>Leave this blank <input name="company-website" tabindex="-1"></label></p>
+
+        <p class="pricenote" id="c-pricenote" hidden></p>
+        <div id="c-tickets"></div>
+
+        <div class="donate" id="c-donatebox">
+          <div class="ticket-info">
+            <div class="ticket-name" id="c-donatetitle"></div>
+            <div class="ticket-note" id="c-donatenote"></div>
+          </div>
+          <div class="donate-input">
+            <span id="c-donatecur"></span>
+            <input type="number" id="q-donation" name="donation" min="0" step="100" value="0"
+                   aria-label="Extra donation amount">
+          </div>
+        </div>
+
+        <div class="total">
+          <span class="total-label">Total</span>
+          <span class="total-amount" id="c-total">&mdash;</span>
+        </div>
+
+        <div class="field" style="margin-top:30px">
+          <label class="lbl" for="f-name">Full name <span class="req">*</span></label>
+          <input type="text" id="f-name" name="name" required autocomplete="name">
+          <p class="hint" id="c-namehint"></p>
+        </div>
+
+        <div class="field">
+          <label class="lbl" for="f-email">Email <span class="req">*</span></label>
+          <input type="email" id="f-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="field" id="shirtField" style="display:none">
+          <span class="lbl">Choose your shirts <span class="req">*</span></span>
+          <p class="stocknote" id="c-stocknote"></p>
+          <p class="hint warn" id="c-shirtcount" style="margin:0 0 10px"></p>
+          <div class="sizegrid" id="c-shirtsizes"></div>
+          <p class="hint" id="c-shirthint"></p>
+          <details class="fold sizeguide" id="c-sizeguide" hidden></details>
+          <p class="hint" id="c-shirtpickup" hidden style="margin-top:12px"></p>
+        </div>
+
+        <div class="field">
+          <span class="lbl">How would you like to pay? <span class="req">*</span></span>
+          <div class="pay-opts" id="c-payopts"></div>
+        </div>
+
+        <div class="field">
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span id="c-consent"></span>
+          </label>
+        </div>
+
+        <button type="submit" class="submit" id="submitBtn">Count me in</button>
+        <p class="hint" id="c-submitnote" hidden style="margin-top:10px;text-align:center"></p>
+        <div class="alert" id="formError"></div>
+      </form>
+    </div>
+
+    <div class="done" id="closedPanel">
+      <h2 id="c-closedtitle"></h2>
+      <div class="prose"><p id="c-closedbody"></p></div>
+      <p class="hint" id="c-closedcontact" style="margin-top:18px"></p>
+    </div>
+
+    <div class="done" id="donePanel">
+      <span class="done-badge">You are in</span>
+      <h2 id="d-heading"></h2>
+      <div class="prose"><p id="d-intro"></p></div>
+
+      <div class="payslip">
+        <dl id="d-slip"></dl>
+      </div>
+
+      <div class="callout" id="d-callout"></div>
+
+      <div class="doneactions">
+        <button type="button" class="copybtn primary" id="pdfBtn">Download as PDF</button>
+        <button type="button" class="copybtn" id="copyBtn">Copy as text</button>
+      </div>
+      <textarea class="copyfallback" id="copyFallback" readonly hidden
+                aria-label="Your payment details, select and copy"></textarea>
+
+      <p class="hint" id="d-contact" style="margin-top:18px"></p>
+    </div>
+
+  </div>
+</section>
+
+<section id="s-schedule">
+  <div class="wrap">
+    <h2 id="c-scheduleh"></h2>
+    <div class="shuttle" id="c-shuttle" hidden></div>
+    <h3 class="subh" id="c-schedulesub" hidden></h3>
+    <ul class="schedule" id="c-schedule"></ul>
+    <p class="callout" id="c-scheduleprize" hidden style="margin:18px 0 0"></p>
+    <p class="footnote" id="c-weathernote" hidden></p>
+  </div>
+</section>
+
+<section id="s-why" class="ink-rule">
+  <div class="wrap">
+    <h2 id="c-whyh"></h2>
+    <div class="prose" id="c-why"></div>
+
+    <details class="fold" id="c-whyfold">
+      <summary id="c-whymorelabel"></summary>
+      <div class="prose" id="c-whymore"></div>
+    </details>
+  </div>
+</section>
+
+
+<div class="lightbox" id="lightbox"><img id="lightboxImg" alt="Shirt design, enlarged"></div>
+
+<footer>
+  <div class="wrap">
+    <p id="c-footcontact"></p>
+    <p>Run by the OIST Student Council. Not an official OIST website.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="gallery/photos.js"></script>
+
+<script>
+const CONFIG = {
+
+  formEndpoint : "https://script.google.com/macros/s/AKfycbzoOH6oi9VNkzH9GVCxwX5nzQreOPpBr70t64rYHzH8c3LDvEmHwS5dnF0Q6_xz6xU-6Q/exec",
+
+  eventName : "Sports Fiesta",
+  eyebrow   : "OIST · 3 November 2026",
+  taglineLead : "Lab coats off. Game faces on. 🔥",
+  tagline     : "On 3 November, OIST took its spirit onto the playing field.",
+
+  date      : "Tuesday, 3 November 2026",
+  time      : "13:00 - 17:00",
+
+  gallery: {
+    heading  : "Photos",
+    preview  : 12,
+    albumUrl : "",
+    albumText: "See every photo"
+  },
+
+  notice    : [],
+
+  results: {
+    show        : true,
+    heading     : "How it went",
+    attendance  : 82,
+    perTeam     : { Blue: 42, Orange: 40 },
+    raisedLive  : true,
+    raisedNote  : "Preliminary total. Some bank transfers are still being processed, so it may change.",
+    raisedLastKnown : { amount: 224156, date: "2026-11-12" },
+    overallWinner : "",
+    games: [
+      { round: "Round 1",  game: "Volleyball",        points: 10, blue: 13, orange: 14 },
+      { round: "Round 1",  game: "Science Relay",     points: 10, blue: 2,  orange: 7  },
+      { round: "Round 1",  game: "BJJ",               points: 10, blue: 10, orange: 8  },
+      { round: "Round 2",  game: "Penalty shootout",  points: 10, blue: 16, orange: 18 },
+      { round: "Round 2",  game: "Frisbee",           points: 10, blue: 5,  orange: 5  },
+      { round: "Round 3",  game: "Captain’s ball",    points: 10, blue: 3,  orange: 10 },
+      { round: "Round 3",  game: "Giant Serpent tag", points: 10, blue: 1,  orange: 2  },
+      { round: "Finale",   game: "Tug of war",        points: 20, blue: 2,  orange: 3  }
+    ]
+  },
+  venue     : "恩納村コミュニティ広場 (Onna Village Community Ground)",
+  address   : "恩納村字恩納419番地3 - near Nabee Beach",
+  mapUrl    : "https://www.google.com/maps/place/Onna+village+community+Ground/@26.5008391,127.8576537,232m/data=!3m1!1e3!4m15!1m8!3m7!1s0x34e503841d0d3033:0xaa0191a04c4ef7d9!2z44CSOTA0LTA0MTEgT2tpbmF3YSwgS3VuaWdhbWkgRGlzdHJpY3QsIE9ubmEsIDQxOS0zIOOCs-ODn-ODpeODi-ODhuOCo-ODvOOCu-ODs-OCvw!3b1!8m2!3d26.4998319!4d127.8578071!16s%2Fg%2F11clp8c9cz!3m5!1s0x34e503844524c4a5:0x7a1c02af6ae2564b!8m2!3d26.5009343!4d127.8583982!16s%2Fg%2F11c1xp5gnh?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D",
+
+  aboutHeading    : "About the day",
+  scheduleHeading : "The Game Plan",
+  about: [
+    "OIST’s first-ever Sports Fiesta was a student-led day of sport, friendly rivalry, and community spirit! Students, faculty, staff, and families came along to compete, cheer from the sidelines, or simply enjoy some good ol’ fun.",
+    "With games and challenges, small prizes and, perhaps most importantly, bragging rights up for grabs, 👀 there were plenty of ways to get involved, whatever your age, experience, or fitness level. It was a chance to step outside the lab and stand side by side on the playing field, regardless of title or position, connecting as one OIST community.",
+    "At the heart of it all was a bigger goal: investing in the health and wellbeing of our community. 💛 Regular physical activity and access to a safe, well-equipped gym are an important part of supporting both physical and mental health. The funds raised through Sports Fiesta will go towards upgrading ageing equipment, helping ensure the gym can continue supporting our community’s wellbeing for years to come.",
+    "Thank you to everyone who competed, cheered and had fun with us. Here’s to a new OIST tradition! 🔥"
+  ],
+  games: [],
+
+  whyShow   : false,
+  whyHeading: "Why we are fundraising",
+  why: [
+    "Everything raised goes to the OIST gym, and to running this and future Student Council events. Some of the equipment has been there since OIST opened its doors more than a decade ago, and heavy use means much of it has seen better days."
+  ],
+
+  whyMoreLabel: "Why doesn't OIST just pay for it?",
+  whyMore: [
+    "OIST receives substantial government support, and much of this money is only allowed to be allocated to go to the research and education mission. Financial support has stayed steady while the community around it has grown, which means fewer recreational needs can come out of the budget. The gym is one of those. It is one of the few places where students, researchers, PIs and staff end up side by side around something as simple as health and wellbeing.",
+    "Often, we ask for things to change, wait, and nothing happens. So we thought: why not do it ourselves? And why not turn it into something bigger than simply raising money for equipment? Why not make a community event out of it? Is there anything better than supporting health and wellbeing while having fun competing against fellow students, PIs, and staff?",
+    "Resources are finite, priorities compete, and sometimes making something happen means building support around an idea rather than waiting for the funding to appear. This event is our way of doing exactly that: bringing the community together, having some fun, and directly investing in a space that benefits all of us."
+  ],
+
+  schedule: [
+    { time: "12:40", what: "Check-in opens",
+      detail: "Grab your wristband (Blue or Orange - pick your fighters), collect your shirt and get changed. Mingle, stretch, size up the competition. Rolling check-in until 13:30." },
+    { time: "13:15", what: "Group warm-up",
+      detail: "Everyone loosens up together before the chaos begins." },
+    { time: "13:30", what: "PHASE ONE: Double Trouble",
+      detail: "Two events at once!",
+      items: ["🏃 Science Relay", "🏐 Volleyball on the grass pitch"] },
+    { time: "14:30", what: "PHASE TWO: Aim & Fire",
+      items: ["⚽ Penalty Shootouts (with a twist!) - half-pitch", "🥏 Frisbee Showdown - half-pitch"] },
+    { time: "15:30", what: "PHASE THREE: Total Mayhem",
+      items: ["Captain's Ball - half a court", "🐍 GIANT SERPENT Tag - half a court",
+              "Plus mini-games at the relay points: spoon & egg race and the classic three-legged race"] },
+    { time: "16:30", what: "THE FINALE: TUG OF WAR",
+      detail: "Last team standing wins extra points." }
+  ],
+
+  schedulePrize: "🎟️ The winning team goes into the raffle for prizes - so every point counts. Play hard!",
+  scheduleTBC: "We are still nailing down the running order. Sign up now and we will update this website with the full schedule as soon as it is set.",
+  scheduleSubheading: "🏆 GAME DAY — Blue vs. Orange 🏆",
+  weatherNote: "If the weather is bad on 3 November, Sports Fiesta moves to 13 December, in an indoor space we have already booked. If you cannot make the new date, we will refund your entry fee.",
+
+  shuttle: {
+    heading    : "Shuttle bus",
+    intro      : "",
+    comingSoon : "The shuttle bus timetable is not final yet - it will be posted here soon.",
+    legs: [
+      { from: "OIST Auditorium", to: "Nabee Beach",
+        runs: [["11:45", "12:00"], ["12:15", "12:30"], ["12:45", "13:00"], ["13:15", "13:30"], ["13:45", "14:00"]] },
+      { from: "Nabee Beach", to: "OIST Auditorium",
+        runs: [["16:05", "16:20"], ["16:35", "16:50"], ["17:05", "17:20"], ["17:35", "17:50"]] }
+    ]
+  },
+
+  currency        : "¥",
+  currencyCode    : "JPY",
+  currencyDecimals: 0,
+  maxPerType      : 10,
+
+  signupIntro: "Entry fees and donations go to the gym, and to running this and future Student Council events.",
+
+  tickets: [
+    { id: "entry",      name: "Entry",            price: 1500, onSitePrice: 1500, note: "Entry to the event." },
+    { id: "entryshirt", name: "Entry + event shirt", price: 3000, onSitePrice: 3000, note: "Entry plus a shirt at a discount." },
+    { id: "shirtonly",  name: "Shirt only",       price: 2000, onSitePrice: 2000, note: "Just the shirt, for anyone not taking part or who cannot make it." }
+  ],
+
+  shirtTicketIds : ["entryshirt", "shirtonly"],
+  shirtSizes     : ["140cm", "S", "M", "L", "XL"],
+
+  shirtVersions : [
+    { id: "v1", name: "体育祭 2026", note: "Orange print on white", image: "shirt-v1.webp" },
+    { id: "v2", name: "Sports Fiesta", note: "Blue print on white",  image: "shirt-v2.webp" }
+  ],
+  shirtHint     : "",
+
+  shirtPreviewTickets : ["entryshirt"],
+
+  shirtStockNote : "Shirts are limited stock and will not be reprinted - once a size is gone, it is gone.",
+
+  sizeGuide: {
+    title   : "Size guide",
+    note    : "Shirt measurements in cm. Widths are measured across the shirt, laid flat.",
+    columns : ["Length", "Body width", "Shoulder width", "Sleeve length"],
+    sizes: {
+      "140cm": [55, 40, 36, 16],
+      "S":     [65, 49, 42, 19],
+      "M":     [69, 52, 46, 20],
+      "L":     [73, 55, 50, 22],
+      "XL":    [77, 58, 54, 24]
+    }
+  },
+
+  donationEnabled : true,
+  donationTitle   : "Add a donation",
+  donationNote    : "Not competing, want to give the squat rack a fighting chance, or just want to support Student Council efforts?",
+
+  allowTransfer : true,
+  allowCash     : true,
+  allowOnSite   : false,
+  cashTitle     : "Cash payment",
+
+  earlyBirdNote  : "",
+  onSiteOnlyNote : "",
+
+  transferOptionNote : "Our account details are on the next screen.",
+  onSiteTitle        : "Pay on site",
+  onSiteOptionNote   : "Cash at check-in on 3 November.",
+
+  onSiteRows: [
+    ["Where", "Check-in at Onna Village Community Ground (恩納村コミュニティ広場)"],
+    ["When",  "3 November, from 12:40"]
+  ],
+  onSiteNote : "Bring the exact amount please. We will have no change.",
+
+  bankRows: [],
+  transferDeadline : "1 November 2026",
+
+  transferDeadlineDate : "2026-11-01T23:59:59+09:00",
+
+  transferLateNote : "Transferred after the deadline? Bring proof of the transfer with you on the day.",
+
+  transferPastDeadlineNote : "The deadline has passed, so please transfer as soon as you can and bring proof of the transfer with you on the day.",
+
+  tanchaHours : "Tuesdays, Thursdays and Fridays, 12:30-13:00",
+
+  shirtPickup : "Cafe Tancha, Tuesdays, Thursdays and Fridays, 12:30-13:00, before the event - or at check-in on the day",
+  cashRows: [
+    ["Before the event", "Cafe Tancha, Tuesdays, Thursdays and Fridays, 12:30-13:00, until the event"],
+    ["Or on the day",    "At check-in, Onna Village Community Ground, 3 November from 12:40"]
+  ],
+  cashNote : "Please bring the exact amount if you can.",
+
+  cashOptionNote : "In person before the event or on the day - where and when on the next screen.",
+
+  cashSwitchNote : "Signed up with bank transfer but would rather pay cash? No problem - come to Cafe Tancha (Tuesdays, Thursdays and Fridays, 12:30-13:00) or pay at check-in on the day.",
+
+  nameHint : "For bank transfers we need the exact name shown on your bank account.",
+
+  closeAfter  : "2026-11-03T23:59:59+09:00",
+
+  earlyBirdEnds : "2026-11-01T23:59:59+09:00",
+
+  submitNote : "After pressing Count me in, please keep this page open until your payment details appear - it can take a few seconds.",
+  closedTitle : "Sign-ups are closed",
+  closedBody     : "Donations to the Student Council are still very welcome.",
+  closedLinkText : "Donate",
+  closedLinkUrl  : "https://forms.oist.jp/form/donate-now?purpose=student%20council",
+
+  contactEmail : "studentcouncil@oist.jp",
+  organiser    : "the OIST Student Council",
+  consentText  : "I agree that my details are stored so the Student Council can organise this event, and deleted afterwards."
+};
+
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const money = n => CONFIG.currency + n.toLocaleString(undefined, {
+  minimumFractionDigits: CONFIG.currencyDecimals,
+  maximumFractionDigits: CONFIG.currencyDecimals
+});
+
+document.title = CONFIG.eventName + " - Sign up";
+$("c-eyebrow").textContent = CONFIG.eyebrow;
+$("c-name").textContent    = CONFIG.eventName;
+$("c-taglead").textContent = CONFIG.taglineLead || "";
+if (!CONFIG.taglineLead) $("c-taglead").remove();
+$("c-tagline").textContent = CONFIG.tagline;
+
+const ICON = {
+  cal:'<svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>',
+  clock:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  pin:'<svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>'
+};
+const addr = CONFIG.mapUrl
+  ? '<a href="'+esc(CONFIG.mapUrl)+'" target="_blank" rel="noopener noreferrer">'+esc(CONFIG.address)+'</a>'
+  : esc(CONFIG.address);
+$("c-facts").innerHTML =
+  '<div class="fact">'+ICON.cal+'<div><b>'+esc(CONFIG.date)+'</b></div></div>'+
+  '<div class="fact">'+ICON.clock+'<div><b>'+esc(CONFIG.time)+'</b></div></div>'+
+  '<div class="fact">'+ICON.pin+'<div><b>'+esc(CONFIG.venue)+'</b><span>'+addr+'</span></div></div>';
+const noticeParts = [].concat(CONFIG.notice || [])
+  .map(p => String(p).trim()).filter(Boolean);
+if (noticeParts.length){
+  $("c-notice").innerHTML = noticeParts.map(esc).join("<br><br>");
+  $("c-notice").hidden = false;
+}
+
+$("c-abouth").textContent = CONFIG.aboutHeading;
+$("c-scheduleh").textContent = CONFIG.scheduleHeading || "On the day";
+
+
+$("c-about").innerHTML    = CONFIG.about.map(p => '<p>'+esc(p)+'</p>').join("");
+if (CONFIG.whyShow === false){
+  $("s-why").hidden = true;
+  setTimeout(() => {
+    const shown = [...document.querySelectorAll("section")].filter(s => !s.hidden && s.offsetParent !== null);
+    $("s-why").classList.remove("ink-rule");
+    if (shown.length) shown[shown.length - 1].classList.add("ink-rule");
+  }, 0);
+}
+$("c-whyh").textContent   = CONFIG.whyHeading;
+$("c-why").innerHTML      = CONFIG.why.map(p => '<p>'+p+'</p>').join("");
+
+if (CONFIG.whyMore && CONFIG.whyMore.length){
+  $("c-whymorelabel").textContent = CONFIG.whyMoreLabel;
+  $("c-whymore").innerHTML = CONFIG.whyMore.map(p => '<p>'+p+'</p>').join("");
+} else {
+  $("c-whyfold").remove();
+}
+
+if (CONFIG.games.length){
+  $("c-games").innerHTML = CONFIG.games.map(g => '<span class="game">'+esc(g)+'</span>').join("");
+}
+
+const shuttleLegs = ((CONFIG.shuttle && CONFIG.shuttle.legs) || [])
+  .filter(l => l && Array.isArray(l.runs) && l.runs.length);
+if (shuttleLegs.length){
+  const heading = String(CONFIG.shuttle.heading || "").trim();
+  const intro   = String(CONFIG.shuttle.intro || "").trim();
+  $("c-shuttle").innerHTML =
+    (heading ? '<h3 class="subh">'+esc(heading)+'</h3>' : '') +
+    (intro ? '<p class="shuttle-intro">'+esc(intro)+'</p>' : '') +
+    '<div class="shuttle-legs">' + shuttleLegs.map(l =>
+      '<div class="shuttle-card"><table class="shuttle-table">' +
+        '<caption>'+esc(l.from)+' <span aria-hidden="true">→</span><span class="sr">to</span> '+esc(l.to)+'</caption>' +
+        '<thead><tr><th scope="col">Run</th><th scope="col">Departs</th>' +
+          '<th scope="col">Arrives <span class="est">(est.)</span></th></tr></thead>' +
+        '<tbody>' + l.runs.map((r, i) =>
+          '<tr><td>'+(i + 1)+'</td><td><time>'+esc(r[0])+'</time></td><td><time>'+esc(r[1])+'</time></td></tr>'
+        ).join('') + '</tbody>' +
+      '</table></div>'
+    ).join('') + '</div>';
+  $("c-shuttle").hidden = false;
+} else if (CONFIG.shuttle && String(CONFIG.shuttle.comingSoon || "").trim()){
+  const heading = String(CONFIG.shuttle.heading || "").trim();
+  $("c-shuttle").innerHTML =
+    (heading ? '<h3 class="subh">'+esc(heading)+'</h3>' : '') +
+    '<p class="shuttle-intro">'+esc(CONFIG.shuttle.comingSoon.trim())+'</p>';
+  $("c-shuttle").hidden = false;
+}
+
+const tbcText = String(CONFIG.scheduleTBC || "").trim();
+
+const weatherText = String(CONFIG.weatherNote || "").trim();
+if (weatherText){
+  $("c-weathernote").innerHTML = '<b>Weather:</b> ' + esc(weatherText);
+  $("c-weathernote").hidden = false;
+}
+
+const scheduleSub = String(CONFIG.scheduleSubheading || "").trim();
+if (scheduleSub && (CONFIG.schedule.length || tbcText)){
+  $("c-schedulesub").textContent = scheduleSub;
+  $("c-schedulesub").hidden = false;
+}
+
+const prizeText = String(CONFIG.schedulePrize || "").trim();
+if (prizeText && CONFIG.schedule.length){
+  $("c-scheduleprize").textContent = prizeText;
+  $("c-scheduleprize").hidden = false;
+}
+
+if (CONFIG.schedule.length){
+  $("c-schedule").innerHTML = CONFIG.schedule.map(s =>
+    '<li><time>'+esc(s.time)+'</time><div class="sched-body">'+
+      '<span class="sched-what">'+esc(s.what)+'</span>'+
+      (s.detail ? '<p class="sched-detail">'+esc(s.detail)+'</p>' : '')+
+      ((s.items || []).length
+        ? '<ul class="sched-items">'+s.items.map(i => '<li>'+esc(i)+'</li>').join("")+'</ul>'
+        : '')+
+    '</div></li>').join("");
+} else if (tbcText){
+  $("c-schedule").outerHTML = '<div class="prose"><p>'+esc(tbcText)+'</p></div>';
+} else if (shuttleLegs.length || weatherText){
+  $("c-schedule").remove();
+} else {
+  $("s-schedule").remove();
+}
+
+const R = CONFIG.results || {};
+const num = v => (v === null || v === undefined || v === "" || isNaN(Number(v))) ? null : Number(v);
+function splitPoints(points, blue, orange){
+  const b = blue || 0, o = orange || 0;
+  let toBlue = b + o > 0 ? Math.round(points * b / (b + o)) : Math.round(points / 2);
+  if (b !== o && toBlue * 2 === points) toBlue += b > o ? 1 : -1;
+  return { Blue: toBlue, Orange: points - toBlue };
+}
+const GAME_POINTS = { "Finale": 20 };
+const played = (R.games || [])
+  .map(g => ({ ...g, blue: num(g.blue), orange: num(g.orange) }))
+  .filter(g => g.blue !== null && g.orange !== null);
+const attendance = num(R.attendance);
+const perBlue = num((R.perTeam || {}).Blue), perOrange = num((R.perTeam || {}).Orange);
+const raisedLive = !!(R.raisedLive && /^https:\/\/script\.google\.com\//.test(CONFIG.formEndpoint || ""));
+
+if (R.show && (played.length || attendance !== null || raisedLive)){
+  $("c-resultsh").textContent = R.heading || "Results";
+
+  const splitBar = (b, o, label, fade = true) => {
+    const fb = b + o ? b : 1, fo = b + o ? o : 1;
+    return '<div class="split start" role="img" aria-label="'+esc(label)+'">'+
+      '<i class="b'+(fade && o > b ? ' lose' : '')+'" style="flex-grow:'+fb+'"></i>'+
+      '<i class="o'+(fade && b > o ? ' lose' : '')+'" style="flex-grow:'+fo+'"></i></div>';
+  };
+
+  const figs = [];
+  if (attendance !== null){
+    const both = perBlue !== null && perOrange !== null;
+    figs.push('<div class="fig"><b data-count="'+attendance+'">'+attendance+'</b>'+
+      '<span class="lbl">people played</span>'+
+      (both ? splitBar(perBlue, perOrange, perBlue+' Blue, '+perOrange+' Orange', false)+
+        '<span class="teams"><span class="tb">'+perBlue+' Blue</span><span class="to">'+perOrange+' Orange</span></span>' : '')+
+      '</div>');
+  }
+  if (raisedLive){
+    figs.push('<div class="fig" id="c-raised"><b class="pending" aria-busy="true">¥</b>'+
+      '<span class="lbl">raised for the gym</span>'+
+      (R.raisedNote ? '<span class="fig-note">'+esc(R.raisedNote)+'</span>' : '')+'</div>');
+  }
+  if (figs.length) $("c-resstats").innerHTML = figs.join("");
+  else $("c-resstats").remove();
+
+  if (played.length){
+    const wins = { Blue: 0, Orange: 0 }; let draws = 0;
+    played.forEach(g => { if (g.blue > g.orange) wins.Blue++; else if (g.orange > g.blue) wins.Orange++; else draws++; });
+    const order = wins.Orange > wins.Blue ? ["Orange", "Blue"] : ["Blue", "Orange"];
+    const summary = order[0]+' won '+wins[order[0]]+', '+order[1]+' '+wins[order[1]]+
+      (draws ? ', '+draws+' draw'+(draws > 1 ? 's' : '') : '');
+    let html = '<div class="rg-head"><h3>Game by game</h3><p>'+esc(summary)+'</p></div>'+
+      '<div class="rg-legend" aria-hidden="true"><span class="tb">Blue</span><span></span><span class="to">Orange</span></div>';
+    let round = null;
+    played.forEach(g => {
+      if (g.round && g.round !== round){ round = g.round; html += '<div class="rg-round">'+esc(round)+'</div>'; }
+      const bw = g.blue > g.orange, ow = g.orange > g.blue;
+      const margin = bw ? 'Blue by ' + (g.blue - g.orange)
+                   : ow ? 'Orange by ' + (g.orange - g.blue) : 'Draw';
+      html += '<div class="rg '+(bw ? 'win-b' : ow ? 'win-o' : 'draw')+'">'+
+        '<span class="sc b'+(bw ? ' win' : '')+'" aria-label="Blue">'+g.blue+'</span>'+
+        '<div class="mid"><span class="nm">'+esc(g.game)+'</span>'+
+          splitBar(g.blue, g.orange, 'Blue '+g.blue+', Orange '+g.orange)+
+          '<span class="mg">'+margin+'</span></div>'+
+        '<span class="sc o'+(ow ? ' win' : '')+'" aria-label="Orange">'+g.orange+'</span>'+
+      '</div>';
+    });
+    $("c-resgames").innerHTML = html;
+  } else {
+    $("c-resgames").remove();
+  }
+  requestAnimationFrame(() => requestAnimationFrame(() =>
+    document.querySelectorAll("#s-results .split.start").forEach(s => s.classList.remove("start"))));
+
+  let winner = String(R.overallWinner || "").trim(), pts = null;
+  const allIn = played.length && played.length === (R.games || []).length;
+  if (allIn){
+    pts = { Blue: 0, Orange: 0 };
+    played.forEach(g => {
+      const s = splitPoints(num(g.points) || GAME_POINTS[g.round] || 10, g.blue, g.orange);
+      pts.Blue += s.Blue; pts.Orange += s.Orange;
+    });
+    if (!winner) winner = pts.Blue > pts.Orange ? "Blue" : pts.Orange > pts.Blue ? "Orange" : "Tie";
+  }
+  if (winner){
+    const w = winner.toLowerCase();
+    const kind = w === "blue" || w === "orange" ? w : "tie";
+    const card = $("c-reswinner");
+    card.className = "res-winner " + kind;
+    const bar = pts && (pts.Blue + pts.Orange)
+      ? '<div class="champ-bar start" role="img" aria-label="Points: Blue '+pts.Blue+', Orange '+pts.Orange+'">'+
+          '<span class="b" style="flex-grow:'+pts.Blue+'">Blue '+pts.Blue+'</span>'+
+          '<span class="o" style="flex-grow:'+pts.Orange+'">'+pts.Orange+' Orange</span></div>'+
+        '<p class="champ-foot">'+(pts.Blue + pts.Orange)+' points across '+played.length+' games</p>'
+      : '';
+    card.innerHTML = '<div class="champ-art" aria-hidden="true"></div>'+
+      (kind === "tie"
+        ? '<span class="champ-kicker"><b>引分</b>Draw</span><h3 class="champ-team">It’s a tie!</h3>'
+        : '<span class="champ-kicker"><b>優勝</b>Champions</span>'+
+          '<h3 class="champ-team">Team '+esc(winner.charAt(0).toUpperCase() + winner.slice(1).toLowerCase())+'</h3>'+
+          '<p class="champ-sub">wins '+esc(CONFIG.eventName)+' 2026</p>')+
+      bar;
+    card.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      const b = card.querySelector(".champ-bar"); if (b) b.classList.remove("start");
+      if (kind === "orange") document.querySelector("header.hero").classList.add("won-a");
+      if (kind === "blue")   document.querySelector("header.hero").classList.add("won-b");
+    }));
+  }
+
+  const calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const showCount = (el, v) => { el.textContent = el.hasAttribute("data-money") ? money(v) : String(v); };
+  const io = !calm && "IntersectionObserver" in window ? new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    io.unobserve(e.target);
+    const el = e.target, to = Number(el.dataset.count), t0 = performance.now(), dur = 1300;
+    showCount(el, 0);
+    const step = now => {
+      const k = Math.min(1, (now - t0) / dur), ease = 1 - Math.pow(1 - k, 3);
+      showCount(el, Math.round(to * ease));
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+    setTimeout(() => showCount(el, to), dur + 250);
+  }), { threshold: 0 }) : null;
+  const countUp = el => { showCount(el, Number(el.dataset.count)); if (io) io.observe(el); };
+  document.querySelectorAll("#c-resstats [data-count]").forEach(countUp);
+
+  if (raisedLive){
+    const RAISED_KEY = "sports-fiesta-raised";
+    const valid = v => v && typeof v.amount === "number" && typeof v.date === "string" ? v : null;
+    const remembered = () => { try { return valid(JSON.parse(localStorage.getItem(RAISED_KEY))); } catch (e) { return null; } };
+    const remember = v => { try { localStorage.setItem(RAISED_KEY, JSON.stringify(v)); } catch (e) {} };
+    (async function loadRaised(){
+      const fig = $("c-raised"), b = fig.querySelector("b");
+      const show = amount => {
+        b.classList.remove("pending"); b.removeAttribute("aria-busy");
+        b.dataset.count = Math.max(0, Math.round(amount)); b.setAttribute("data-money", "");
+        countUp(b);
+      };
+      try {
+        const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 10000);
+        const url = CONFIG.formEndpoint + (CONFIG.formEndpoint.includes("?") ? "&" : "?") + "results=1";
+        const r = await fetch(url, { signal: ctl.signal });
+        clearTimeout(timer);
+        const d = await r.json();
+        if (!d || !d.ok || typeof d.raised !== "number") throw new Error("no figure");
+        show(d.raised);
+        remember({ amount: Math.round(d.raised), date: typeof d.updated === "string" ? d.updated : new Date().toISOString() });
+      } catch (err) {
+        const known = [remembered(), valid(R.raisedLastKnown)].filter(Boolean)
+          .sort((x, y) => (y.date > x.date) - (y.date < x.date))[0];
+        if (known) show(known.amount); else fig.remove();
+        console.warn("[Sports Fiesta] No total from the Sheet, so the money figure " +
+          (known ? "shows the last known total (" + known.date + ")" : "is hidden") + ". " +
+          "If the Apps Script answers without a 'raised' figure, Code.gs needs a new version " +
+          "deployed (Deploy > Manage deployments > Edit > New version).", err);
+      }
+    })();
+  }
+
+  $("s-results").hidden = false;
+  document.title = CONFIG.eventName + " - Results";
+}
+(function gallery(){
+  const G = CONFIG.gallery || {};
+  const photos = (Array.isArray(window.GALLERY_PHOTOS) ? window.GALLERY_PHOTOS : [])
+    .filter(p => p && p.src);
+  if (!photos.length) return;
+
+  $("c-galleryh").textContent = G.heading || "Photos";
+  const grid = $("c-gallery"), view = $("gview"), img = $("gvImg"), count = $("gvCount");
+  const alt = (p, i) => p.alt || ("Sports Fiesta 2026, photo " + (i + 1) + " of " + photos.length);
+  let shown = 0, at = 0;
+
+  function addThumbs(upTo){
+    const html = photos.slice(shown, upTo).map((p, k) => {
+      const i = shown + k;
+      return '<button type="button" data-i="'+i+'" aria-label="Open photo '+(i + 1)+'">'+
+        '<img src="'+esc(p.thumb || p.src)+'" width="'+(p.tw || p.w || "")+'" height="'+(p.th || p.h || "")+'"'+
+        ' loading="lazy" decoding="async" alt="'+esc(alt(p, i))+'"></button>';
+    }).join("");
+    grid.insertAdjacentHTML("beforeend", html);
+    shown = Math.min(upTo, photos.length);
+  }
+  addThumbs(G.preview || photos.length);
+
+  const actions = $("c-galleryactions");
+  if (shown < photos.length){
+    const more = document.createElement("button");
+    more.type = "button"; more.className = "gbtn";
+    more.textContent = "Show all " + photos.length + " photos";
+    more.onclick = () => { addThumbs(photos.length); more.remove(); };
+    actions.appendChild(more);
+  }
+  if (G.albumUrl){
+    actions.insertAdjacentHTML("beforeend", '<a class="gbtn" href="'+esc(G.albumUrl)+
+      '" target="_blank" rel="noopener">'+esc(G.albumText || "See every photo")+'</a>');
+  }
+
+  function open(i){
+    at = (i + photos.length) % photos.length;
+    img.src = photos[at].src; img.alt = alt(photos[at], at);
+    count.textContent = (at + 1) + " / " + photos.length;
+    [at + 1, at - 1].forEach(j => { const p = photos[(j + photos.length) % photos.length]; new Image().src = p.src; });
+    if (!view.open) view.showModal();
+  }
+  grid.addEventListener("click", e => {
+    const b = e.target.closest("button[data-i]"); if (b) open(Number(b.dataset.i));
+  });
+  $("gvPrev").onclick = () => open(at - 1);
+  $("gvNext").onclick = () => open(at + 1);
+  $("gvClose").onclick = () => view.close();
+  view.addEventListener("click", e => { if (e.target === view) view.close(); });
+  view.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") open(at - 1);
+    if (e.key === "ArrowRight") open(at + 1);
+  });
+  let x0 = null;
+  view.addEventListener("touchstart", e => { x0 = e.touches[0].clientX; }, { passive: true });
+  view.addEventListener("touchend", e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 45) open(at + (dx < 0 ? 1 : -1));
+  });
+  if (photos.length < 2) { $("gvPrev").remove(); $("gvNext").remove(); }
+  $("s-gallery").hidden = false;
+})();
+
+if (R.show && $("s-schedule")){
+  $("s-schedule").remove();
+}
+
+function registrationClosed(){
+  if (!CONFIG.closeAfter) return false;
+  const closesAt = Date.parse(CONFIG.closeAfter);
+  return !isNaN(closesAt) && Date.now() > closesAt;
+}
+
+function showClosed(){
+  if (!$("s-signup")) return;
+  const link = CONFIG.closedLinkUrl
+    ? '<a class="donate-btn" href="'+esc(CONFIG.closedLinkUrl)+'" target="_blank" rel="noopener">'+
+        esc(CONFIG.closedLinkText || "Donate")+'</a>'
+    : '';
+  $("c-notice").className = "donate-card";
+  $("c-notice").innerHTML = '<span class="donate-text"><b>'+esc(CONFIG.closedTitle)+'.</b> '+
+    esc(CONFIG.closedBody)+'</span>'+link;
+  $("c-notice").hidden = false;
+  $("s-signup").remove();
+}
+
+$("c-signupintro").textContent = CONFIG.signupIntro;
+if (CONFIG.nameHint) $("c-namehint").textContent = CONFIG.nameHint;
+else $("c-namehint").remove();
+$("c-consent").textContent     = CONFIG.consentText;
+$("c-footcontact").innerHTML   = 'Questions, or want to help? Email <a href="mailto:'+
+  esc(CONFIG.contactEmail)+'">'+esc(CONFIG.contactEmail)+'</a> - organised by '+esc(CONFIG.organiser)+'.';
+
+const qty = {};
+CONFIG.tickets.forEach(t => qty[t.id] = 0);
+
+const ZOOM_ICON = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" ' +
+  'stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/>' +
+  '<path d="M15.5 15.5 21 21M10.5 8v5M8 10.5h5"/></svg>';
+const ticketShirts = t =>
+  (CONFIG.shirtPreviewTickets || []).includes(t.id) && CONFIG.shirtVersions.length
+    ? '<div class="ticket-shirts">' + CONFIG.shirtVersions.map(v =>
+        '<button type="button" data-zoom="'+esc(v.image)+'" aria-label="See the '+esc(v.name)+' shirt larger">'+
+          '<img src="'+esc(v.image)+'" alt=""><span class="zoomicon">'+ZOOM_ICON+'</span>'+
+        '</button>').join("") + '</div>'
+    : '';
+
+$("c-tickets").innerHTML = CONFIG.tickets.map(t =>
+  '<div class="ticket'+(ticketShirts(t) ? ' has-shirts' : '')+'" id="tk-'+t.id+'">'+
+    '<div class="ticket-info">'+
+      '<div class="ticket-name">'+esc(t.name)+'</div>'+
+      (t.note ? '<div class="ticket-note">'+esc(t.note)+'</div>' : '')+
+    '</div>'+
+    ticketShirts(t)+
+    '<div class="ticket-price">'+money(t.price)+'</div>'+
+    '<div class="stepper">'+
+      '<button type="button" aria-label="One fewer '+esc(t.name)+'" data-minus="'+t.id+'">&minus;</button>'+
+      '<input type="number" name="qty-'+t.id+'" id="q-'+t.id+'" value="0" min="0" '+
+             'max="'+CONFIG.maxPerType+'" aria-label="'+esc(t.name)+' quantity">'+
+      '<button type="button" aria-label="One more '+esc(t.name)+'" data-plus="'+t.id+'">+</button>'+
+    '</div>'+
+  '</div>').join("");
+
+if (CONFIG.donationEnabled){
+  $("c-donatetitle").textContent = CONFIG.donationTitle;
+  $("c-donatenote").textContent  = CONFIG.donationNote;
+  $("c-donatecur").textContent   = CONFIG.currency;
+  $("q-donation").oninput = refresh;
+} else {
+  $("c-donatebox").remove();
+}
+
+const donation = () => {
+  if (!CONFIG.donationEnabled) return 0;
+  const v = parseFloat($("q-donation").value);
+  return isNaN(v) || v < 0 ? 0 : v;
+};
+
+function setQty(id, v){
+  v = Math.max(0, Math.min(CONFIG.maxPerType, isNaN(v) ? 0 : v));
+  qty[id] = v;
+  $("q-"+id).value = v;
+  $("tk-"+id).classList.toggle("chosen", v > 0);
+  document.querySelector('[data-minus="'+id+'"]').disabled = v === 0;
+  document.querySelector('[data-plus="'+id+'"]').disabled  = v === CONFIG.maxPerType;
+  refresh();
+}
+document.querySelectorAll("[data-plus]").forEach(b =>
+  b.onclick = () => setQty(b.dataset.plus, qty[b.dataset.plus] + 1));
+document.querySelectorAll("[data-minus]").forEach(b =>
+  b.onclick = () => setQty(b.dataset.minus, qty[b.dataset.minus] - 1));
+CONFIG.tickets.forEach(t =>
+  $("q-"+t.id).oninput = e => setQty(t.id, parseInt(e.target.value, 10)));
+
+function priceOf(t){
+  return chosenPayment() === "onsite" && t.onSitePrice != null ? t.onSitePrice : t.price;
+}
+
+const ticketTotal = () => CONFIG.tickets.reduce((s,t) => s + priceOf(t) * qty[t.id], 0);
+const total       = () => ticketTotal() + donation();
+const anything    = () => total() > 0;
+
+function orderText(){
+  const parts = CONFIG.tickets.filter(t => qty[t.id] > 0)
+    .map(t => qty[t.id] + " x " + t.name + " (" + money(priceOf(t)) + ")");
+  if (donation() > 0) parts.push("Donation " + money(donation()));
+  return parts.join(", ");
+}
+
+const shirtQty = {};
+CONFIG.shirtVersions.forEach(v => {
+  shirtQty[v.id] = {};
+  CONFIG.shirtSizes.forEach(s => shirtQty[v.id][s] = 0);
+});
+
+const shirtTickets   = () => CONFIG.shirtTicketIds || [];
+const shirtsNeeded   = () => shirtTickets().reduce((n, id) => n + (qty[id] || 0), 0);
+const wantsShirt     = () => shirtsNeeded() > 0;
+const versionCount   = vid => CONFIG.shirtSizes.reduce((m, s) => m + shirtQty[vid][s], 0);
+const shirtsAssigned = () => CONFIG.shirtVersions.reduce((n, v) => n + versionCount(v.id), 0);
+const shirtSummary   = () => CONFIG.shirtVersions
+  .filter(v => versionCount(v.id) > 0)
+  .map(v => v.name + ": " + CONFIG.shirtSizes.filter(s => shirtQty[v.id][s] > 0)
+                              .map(s => s + " x" + shirtQty[v.id][s]).join(", "))
+  .join("; ");
+
+if (shirtTickets().length){
+  $("c-shirtsizes").innerHTML = CONFIG.shirtVersions.map(v =>
+    '<div class="shirtver" id="sv-'+v.id+'">'+
+      '<div class="shirthead">'+
+        '<img class="shirtimg" src="'+esc(v.image)+'" data-zoom="'+esc(v.image)+'" '+
+             'alt="'+esc(v.name)+' shirt design">'+
+        '<div>'+
+          '<div class="shirtname">'+esc(v.name)+'</div>'+
+          (v.note ? '<div class="shirtdesc">'+esc(v.note)+'</div>' : '')+
+          '<div class="shirtdesc">Tap the picture to see it larger</div>'+
+        '</div>'+
+        '<span class="shirtcount" id="svc-'+v.id+'"></span>'+
+      '</div>'+
+      '<div class="sizegrid">'+
+        CONFIG.shirtSizes.map(s =>
+          '<div class="sizerow" id="sz-'+v.id+'-'+esc(s)+'">'+
+            '<span class="sizename">'+esc(s)+'</span>'+
+            '<div class="stepper">'+
+              '<button type="button" aria-label="One fewer '+esc(v.name)+' size '+esc(s)+'" '+
+                      'data-sminus="'+v.id+'|'+esc(s)+'">&minus;</button>'+
+              '<input type="number" name="shirt-'+v.id+'-'+esc(s)+'" id="sq-'+v.id+'-'+esc(s)+'" '+
+                     'value="0" min="0" readonly aria-label="'+esc(v.name)+' size '+esc(s)+'">'+
+              '<button type="button" aria-label="One more '+esc(v.name)+' size '+esc(s)+'" '+
+                      'data-splus="'+v.id+'|'+esc(s)+'">+</button>'+
+            '</div>'+
+          '</div>').join("")+
+      '</div>'+
+    '</div>').join("");
+  if (CONFIG.shirtHint) $("c-shirthint").textContent = CONFIG.shirtHint;
+  else $("c-shirthint").remove();
+  if (CONFIG.shirtStockNote) $("c-stocknote").textContent = CONFIG.shirtStockNote;
+  else $("c-stocknote").remove();
+
+  const guide = CONFIG.sizeGuide;
+  const guideSizes = (guide && guide.sizes)
+    ? CONFIG.shirtSizes.filter(s => Array.isArray(guide.sizes[s])) : [];
+  if (guideSizes.length){
+    $("c-sizeguide").innerHTML =
+      '<summary>'+esc(guide.title || "Size guide")+'</summary>'+
+      '<div class="sizeguide-body">'+
+        (guide.note ? '<p class="hint">'+esc(guide.note)+'</p>' : '')+
+        '<div class="tablewrap"><table class="sizetable">'+
+          '<thead><tr><th scope="col">Size</th>'+
+            (guide.columns || []).map(c => '<th scope="col">'+esc(c)+'</th>').join("")+
+          '</tr></thead>'+
+          '<tbody>'+guideSizes.map(s =>
+            '<tr><th scope="row">'+esc(s)+'</th>'+
+              guide.sizes[s].map(v => '<td>'+esc(v)+'</td>').join("")+'</tr>'
+          ).join("")+'</tbody>'+
+        '</table></div>'+
+      '</div>';
+    $("c-sizeguide").hidden = false;
+  } else {
+    $("c-sizeguide").remove();
+  }
+
+  const parse = k => k.split("|");
+  document.querySelectorAll("[data-splus]").forEach(b => b.onclick = () => {
+    const [vid, s] = parse(b.dataset.splus); setShirt(vid, s, shirtQty[vid][s] + 1);
+  });
+  document.querySelectorAll("[data-sminus]").forEach(b => b.onclick = () => {
+    const [vid, s] = parse(b.dataset.sminus); setShirt(vid, s, shirtQty[vid][s] - 1);
+  });
+
+  if (CONFIG.shirtPickup){
+    $("c-shirtpickup").textContent = "Pick up your shirt at " + CONFIG.shirtPickup + ".";
+    $("c-shirtpickup").hidden = false;
+  }
+
+  const lb = $("lightbox"), lbImg = $("lightboxImg");
+  document.querySelectorAll("[data-zoom]").forEach(img => img.onclick = () => {
+    lbImg.src = img.dataset.zoom;
+    lb.classList.add("show");
+  });
+  lb.onclick = () => lb.classList.remove("show");
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") lb.classList.remove("show");
+  });
+} else {
+  $("shirtField").remove();
+}
+
+function setShirt(vid, size, v){
+  const room = shirtsNeeded() - shirtsAssigned() + shirtQty[vid][size];
+  shirtQty[vid][size] = Math.max(0, Math.min(room, isNaN(v) ? 0 : v));
+  $("sq-"+vid+"-"+size).value = shirtQty[vid][size];
+  refresh();
+}
+
+function trimShirts(){
+  let over = shirtsAssigned() - shirtsNeeded();
+  for (let vi = CONFIG.shirtVersions.length - 1; vi >= 0 && over > 0; vi--){
+    const vid = CONFIG.shirtVersions[vi].id;
+    for (let i = CONFIG.shirtSizes.length - 1; i >= 0 && over > 0; i--){
+      const s = CONFIG.shirtSizes[i];
+      const take = Math.min(over, shirtQty[vid][s]);
+      shirtQty[vid][s] -= take;
+      over -= take;
+      $("sq-"+vid+"-"+s).value = shirtQty[vid][s];
+    }
+  }
+}
+
+function refresh(){
+  $("c-total").textContent = anything() ? money(total()) : "—";
+  CONFIG.tickets.forEach(t =>
+    $("tk-"+t.id).querySelector(".ticket-price").textContent = money(priceOf(t)));
+
+  let shirtsBalanced = true;
+  if (shirtTickets().length){
+    trimShirts();
+    const need = shirtsNeeded(), got = shirtsAssigned();
+    shirtsBalanced = need === got;
+
+    $("shirtField").style.display = need > 0 ? "" : "none";
+    CONFIG.shirtVersions.forEach(v => {
+      const n = versionCount(v.id);
+      $("sv-"+v.id).classList.toggle("chosen", n > 0);
+      $("svc-"+v.id).textContent = n > 0 ? n + " chosen" : "";
+      CONFIG.shirtSizes.forEach(s => {
+        $("sz-"+v.id+"-"+s).classList.toggle("chosen", shirtQty[v.id][s] > 0);
+        document.querySelector('[data-sminus="'+v.id+'|'+s+'"]').disabled = shirtQty[v.id][s] === 0;
+        document.querySelector('[data-splus="'+v.id+'|'+s+'"]').disabled  = got >= need;
+      });
+    });
+
+    const plural = need === 1 ? "" : "s";
+    $("c-shirtcount").textContent = need === 0 ? ""
+      : shirtsBalanced ? "All " + need + " shirt" + plural + " assigned."
+      : (need - got) + " of " + need + " still to choose.";
+    $("c-shirtcount").classList.toggle("warn", !shirtsBalanced);
+  }
+
+  $("submitBtn").disabled = !anything() || !shirtsBalanced;
+}
+
+let earlyBirdClosedByServer = false;
+
+function earlyBirdClosed(){
+  if (earlyBirdClosedByServer) return true;
+  if (!CONFIG.earlyBirdEnds) return false;
+  const endsAt = Date.parse(CONFIG.earlyBirdEnds);
+  return !isNaN(endsAt) && Date.now() > endsAt;
+}
+
+function renderPayOptions(){
+  const chosen = chosenPayment();
+  const early  = !earlyBirdClosed();
+  const opts = [];
+  if (CONFIG.allowTransfer && early)
+    opts.push({v:"transfer", t:"Bank transfer", d: esc(CONFIG.transferOptionNote)});
+  if (CONFIG.allowCash)
+    opts.push({v:"cash", t: esc(CONFIG.cashTitle || "Cash"), d: esc(CONFIG.cashOptionNote)});
+  if (CONFIG.allowOnSite)
+    opts.push({v:"onsite", t: esc(CONFIG.onSiteTitle), d: esc(CONFIG.onSiteOptionNote)});
+
+  $("c-payopts").innerHTML = opts.map((o,i) => {
+    const keep = chosen === o.v || (!opts.some(x => x.v === chosen) && i === 0);
+    return '<label class="pay">'+
+      '<input type="radio" name="payment" value="'+o.v+'" '+(keep?"checked":"")+' required>'+
+      '<span><span class="pay-title">'+o.t+'</span><br><span class="pay-desc">'+o.d+'</span></span>'+
+    '</label>';
+  }).join("");
+
+  const noteText = (early ? CONFIG.earlyBirdNote : CONFIG.onSiteOnlyNote) || "";
+  $("c-pricenote").textContent = noteText;
+  $("c-pricenote").hidden = !noteText;
+}
+
+function cashSwitchOpen(){
+  return !!(CONFIG.allowCash && CONFIG.cashSwitchNote);
+}
+
+if (CONFIG.submitNote){
+  $("c-submitnote").textContent = CONFIG.submitNote;
+  $("c-submitnote").hidden = false;
+}
+
+renderPayOptions();
+$("c-payopts").addEventListener("change", refresh);
+
+function chosenPayment(){
+  const el = document.querySelector('[name="payment"]:checked');
+  return el ? el.value : "";
+}
+
+const endpointReady = () => {
+  const u = CONFIG.formEndpoint || "";
+  return /^https:\/\/script\.google\.com\/.+\/exec$/.test(u) ||
+         /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?\//.test(u);
+};
+
+if (!endpointReady()){
+  console.error(
+    "[Sports Fiesta] CONFIG.formEndpoint is not set to a deployed Apps Script " +
+    "URL, so NOTHING WILL BE SAVED. Sign-ups will show the 'email us instead' " +
+    "message. Fix this before sharing the link. Current value: " +
+    JSON.stringify(CONFIG.formEndpoint)
+  );
+}
+
+function transferDeadlinePassed(){
+  if (!CONFIG.transferDeadlineDate) return false;
+  const passedAt = Date.parse(CONFIG.transferDeadlineDate);
+  return !isNaN(passedAt) && Date.now() > passedAt;
+}
+
+const PAY_LABEL = { transfer: "Bank transfer", cash: CONFIG.cashTitle || "Cash" };
+const payLabel  = method => method === "onsite" ? CONFIG.onSiteTitle : (PAY_LABEL[method] || method);
+
+function paymentDetail(method, name){
+  const amount = money(total());
+  const late   = transferDeadlinePassed();
+  const rows = (method === "transfer" ? CONFIG.bankRows
+              : method === "onsite"   ? CONFIG.onSiteRows
+              : CONFIG.cashRows).slice();
+  const lines = rows.map(r => r[0] + ": " + r[1]).join("\n");
+
+  if (method === "onsite") {
+    return { rows: rows, text:
+      "Pay in cash at check-in on the day.\n\n" + lines +
+      "\nAmount: " + amount +
+      "\n\n" + CONFIG.onSiteNote + " Just give your name when you pay." };
+  }
+
+  const text = (method === "transfer")
+    ? (late
+        ? "Pay by bank transfer as soon as you can - the deadline of " +
+          CONFIG.transferDeadline + " has passed."
+        : "Pay by bank transfer by " + CONFIG.transferDeadline + ".") + "\n\n" + lines +
+      "\nAmount: " + amount +
+      "\n\nIn the sender field put your full name, exactly as it appears on your\n" +
+      "bank account:\n" +
+      "  " + (name || "YOUR NAME") +
+      "\n\nThe name is how we match the payment to you." +
+      ((late ? CONFIG.transferPastDeadlineNote : CONFIG.transferLateNote)
+        ? "\n\n" + (late ? CONFIG.transferPastDeadlineNote : CONFIG.transferLateNote) : "")
+    : "Pay in cash, at Cafe Tancha before the event or at check-in on the day.\n\n" + lines +
+      "\nAmount: " + amount +
+      "\n\n" + CONFIG.cashNote + " Just give your name when you pay.";
+
+  return { rows: rows, text: text };
+}
+
+const form = $("signupForm");
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  if (!anything()) return;
+
+  if (registrationClosed()) { showClosed(); return; }
+
+  const method = chosenPayment();
+
+  $("f-order").value           = orderText();
+  $("f-amount").value          = total().toFixed(CONFIG.currencyDecimals) + " " + CONFIG.currencyCode;
+  $("f-shirtsizes").value      = shirtSummary();
+
+  const btn = $("submitBtn");
+  const err = $("formError");
+  btn.disabled = true;
+  btn.textContent = "Sending - please keep this page open...";
+  err.className = "alert";
+
+  const body = new URLSearchParams(new FormData(form)).toString();
+  let ok = false, reply = null, timedOut = false;
+  if (!endpointReady()) {
+    ok = false;
+  } else {
+    const ac = new AbortController();
+    const timer = setTimeout(() => { timedOut = true; ac.abort(); }, 20000);
+    try {
+      const res = await fetch(CONFIG.formEndpoint, {
+        method: "POST",
+        headers: {"Content-Type": "text/plain;charset=utf-8"},
+        body: body,
+        signal: ac.signal
+      });
+      reply = await res.json();
+      ok = res.ok && reply && reply.ok === true;
+    } catch (_) {
+      ok = false;
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
+  if (!ok && reply && reply.closed) { showClosed(); return; }
+
+  if (!ok && reply && reply.soldOut) {
+    btn.disabled = false;
+    btn.textContent = "Count me in";
+    err.className = "alert warn";
+    err.innerHTML = "<b>Sorry - part of that shirt order can't be filled.</b><br>" +
+      (reply.soldOutDetail ? esc(reply.soldOutDetail) + "<br>" : "") +
+      "<br>Nothing has been saved yet. Change the size or quantity and submit again.";
+    return;
+  }
+
+  if (!ok && reply && reply.earlyBirdClosed) {
+    btn.textContent = "Count me in";
+    earlyBirdClosedByServer = true;
+    renderPayOptions();
+    refresh();
+    err.className = "alert warn";
+    err.innerHTML = "<b>Bank transfer is no longer available.</b>" +
+      (CONFIG.onSiteOnlyNote ? "<br>" + esc(CONFIG.onSiteOnlyNote) : "") +
+      "<br><br>Your details are still here and cash payment is now selected. " +
+      "Check the new total, then press <b>Count me in</b> again.";
+    return;
+  }
+
+  if (!ok && reply && reply.duplicate) {
+    btn.disabled = false;
+    btn.textContent = "Count me in";
+    err.className = "alert warn";
+    err.innerHTML = "<b>This email has already signed up.</b><br>" +
+      (reply.previous ? esc(reply.previous) + "<br>" : "") +
+      "<br>If that was you and you meant to add more, carry on. If not, you are " +
+      "already on the list and do not need to do anything.";
+    const again = document.createElement("button");
+    again.type = "button";
+    again.className = "copybtn";
+    again.style.marginTop = "14px";
+    again.textContent = "Sign up again anyway";
+    again.onclick = () => {
+      $("f-confirmdup").value = "1";
+      err.className = "alert";
+      form.requestSubmit();
+    };
+    err.appendChild(again);
+    return;
+  }
+
+  if (!ok){
+    btn.disabled = false;
+    btn.textContent = "Count me in";
+    err.className = "alert err";
+    err.innerHTML = (timedOut
+        ? "That took too long, so we stopped waiting - your sign-up may not have been saved. "
+        : "We could not save your sign-up automatically. ") +
+      "Please email " +
+      '<a href="mailto:'+esc(CONFIG.contactEmail)+'">'+esc(CONFIG.contactEmail)+'</a>' +
+      " with your name and what you would like to enter, and we will add you by hand.";
+    return;
+  }
+  $("f-confirmdup").value = "";
+  showConfirmation(method);
+});
+
+let summaryForCopy = "";
+
+function buildSummary(method, name){
+  const L = [];
+  L.push(CONFIG.eventName + " - " + CONFIG.date);
+  L.push(CONFIG.time + ", " + CONFIG.venue);
+  L.push("");
+  L.push("Name: " + name);
+  L.push("Signed up for: " + orderText());
+  if (wantsShirt()) L.push("Shirt sizes: " + shirtSummary());
+  if (wantsShirt() && CONFIG.shirtPickup) L.push("Shirt pickup: " + CONFIG.shirtPickup);
+  L.push("Amount: " + money(total()));
+  L.push("");
+  L.push("--- How to pay ---");
+  L.push("");
+  L.push(paymentDetail(method, name).text);
+  L.push("");
+  L.push("Questions: " + CONFIG.contactEmail);
+  return L.join("\n");
+}
+
+function slipCanvas(){
+  const W = 1240, H = 1754;
+  const c = document.createElement("canvas");
+  c.width = W; c.height = H;
+  const x = c.getContext("2d");
+  const JP = '"Hiragino Sans","Yu Gothic","Meiryo",system-ui,sans-serif';
+
+  x.fillStyle = "#ffffff"; x.fillRect(0, 0, W, H);
+  x.fillStyle = "#c2410c"; x.fillRect(0, 0, W, 14);
+
+  const lines = summaryForCopy.split("\n");
+  const M = 90;
+  let y = 150;
+
+  x.fillStyle = "#1a1917";
+  x.font = "700 54px " + JP;
+  x.fillText(lines[0] || CONFIG.eventName, M, y);
+  y += 52;
+  x.fillStyle = "#68625a";
+  x.font = "28px " + JP;
+  x.fillText(lines[1] || "", M, y);
+  y += 70;
+
+  const maxW = W - M * 2;
+  function wrap(text){
+    const out = [];
+    for (const chunk of text.split(" ")) {
+      if (!out.length) { out.push(chunk); continue; }
+      const t = out[out.length - 1] + " " + chunk;
+      if (x.measureText(t).width <= maxW) out[out.length - 1] = t;
+      else out.push(chunk);
+    }
+    const fixed = [];
+    for (const l of out) {
+      if (x.measureText(l).width <= maxW) { fixed.push(l); continue; }
+      let cur = "";
+      for (const ch of l) {
+        if (x.measureText(cur + ch).width > maxW) { fixed.push(cur); cur = ch; }
+        else cur += ch;
+      }
+      if (cur) fixed.push(cur);
+    }
+    return fixed;
+  }
+
+  for (const raw of lines.slice(2)) {
+    if (y > H - 120) break;
+    const line = raw.replace(/\t/g, "  ");
+
+    if (!line.trim()) { y += 20; continue; }
+
+    if (/^---.*---$/.test(line.trim())) {
+      y += 12;
+      x.strokeStyle = "#e4e0d8"; x.lineWidth = 2;
+      x.beginPath(); x.moveTo(M, y); x.lineTo(W - M, y); x.stroke();
+      y += 40;
+      x.fillStyle = "#c2410c"; x.font = "700 30px " + JP;
+      x.fillText(line.replace(/-/g, "").trim(), M, y);
+      y += 44;
+      continue;
+    }
+
+    const isRef = /^(Reference|Amount):/.test(line);
+    x.fillStyle = isRef ? "#c2410c" : "#1a1917";
+    x.font = (isRef ? "700 32px " : "30px ") + JP;
+    for (const l of wrap(line)) { x.fillText(l, M, y); y += 42; }
+  }
+
+  x.fillStyle = "#68625a";
+  x.font = "24px " + JP;
+  x.fillText(CONFIG.eventName + " - " + CONFIG.contactEmail, M, H - 70);
+  return c;
+}
+
+function pdfFilename(){
+  const who = ($("f-name").value || "signup")
+    .replace(/[^A-Za-z0-9-]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+  return "SportsFiesta-" + (who || "signup") + ".pdf";
+}
+
+const pdfAvailable = () => !!(window.jspdf && window.jspdf.jsPDF);
+if (!pdfAvailable()) $("pdfBtn").hidden = true;
+
+$("pdfBtn").onclick = () => {
+  const btn = $("pdfBtn");
+  if (!pdfAvailable()) { btn.hidden = true; return; }
+  const original = btn.textContent;
+  btn.disabled = true; btn.textContent = "Preparing...";
+  try {
+    const canvas = slipCanvas();
+    const doc = new window.jspdf.jsPDF({ unit: "pt", format: "a4", compress: true });
+    doc.addImage(canvas.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, 595.28, 841.89);
+    doc.save(pdfFilename());
+    btn.textContent = "Downloaded";
+    setTimeout(() => { btn.textContent = original; btn.disabled = false; }, 2500);
+  } catch (err) {
+    btn.textContent = "PDF failed - use Copy as text";
+    btn.disabled = false;
+  }
+};
+
+$("copyBtn").onclick = async () => {
+  const btn = $("copyBtn");
+  let ok = false;
+
+  try {
+    await navigator.clipboard.writeText(summaryForCopy);
+    ok = true;
+  } catch (_) {
+    try {
+      const ta = document.createElement("textarea");
+      ta.value = summaryForCopy;
+      ta.setAttribute("readonly", "");
+      ta.style.cssText = "position:fixed;top:0;left:0;opacity:0";
+      document.body.appendChild(ta);
+      ta.select();
+      ok = document.execCommand("copy");
+      document.body.removeChild(ta);
+    } catch (_) { ok = false; }
+  }
+
+  if (ok){
+    btn.textContent = "Copied to clipboard";
+    btn.classList.add("done");
+    setTimeout(() => {
+      btn.textContent = "Copy payment details";
+      btn.classList.remove("done");
+    }, 2500);
+  } else {
+    const fb = $("copyFallback");
+    fb.value = summaryForCopy;
+    fb.hidden = false;
+    fb.focus();
+    fb.select();
+    btn.textContent = "Select the text below and copy it";
+  }
+};
+
+function showConfirmation(method){
+  const amount = money(total());
+  const name   = $("f-name").value;
+  const detail = paymentDetail(method, name);
+  summaryForCopy = buildSummary(method, name);
+
+  $("formPanel").style.display = "none";
+  $("donePanel").classList.add("show");
+
+  const rows = [];
+  rows.push(["Name", esc(name)]);
+  rows.push(["Signed up for", esc(orderText())]);
+  if (wantsShirt()) rows.push(["Shirt sizes", esc(shirtSummary())]);
+  if (wantsShirt() && CONFIG.shirtPickup) rows.push(["Shirt pickup", esc(CONFIG.shirtPickup)]);
+  rows.push(["Amount", amount]);
+  rows.push(["Paying", esc(payLabel(method))]);
+  detail.rows.forEach(r => rows.push([esc(r[0]), esc(r[1])]));
+
+  $("d-heading").textContent = "Almost there - one step left";
+  if (method === "transfer"){
+    $("d-intro").textContent = "Your spot is held. Please transfer the amount below to complete your sign-up.";
+    const late = transferDeadlinePassed();
+    const tail = late ? CONFIG.transferPastDeadlineNote : CONFIG.transferLateNote;
+    $("d-callout").innerHTML = "<b>Please transfer " + amount +
+      (late ? " as soon as you can - the deadline of " + esc(CONFIG.transferDeadline) + " has passed."
+            : " by " + esc(CONFIG.transferDeadline) + ".") +
+      "</b> In the sender field put your full name, exactly as it appears on " +
+      "your bank account:<br><b class=\"ref\">" + esc(name) + "</b>" +
+      "<br>The name is how we match the payment to you." +
+      (tail ? "<br><br>" + esc(tail) : "") +
+      (cashSwitchOpen() ? "<br><br>" + esc(CONFIG.cashSwitchNote) : "");
+  } else if (method === "onsite"){
+    $("d-intro").textContent = "Your spot is held. Pay in cash at check-in when you arrive.";
+    $("d-callout").innerHTML = "<b>Bring " + amount + " in cash to check-in on the day.</b> " +
+      esc(CONFIG.onSiteNote) + " Just give your name when you pay.";
+  } else {
+    $("d-intro").textContent = "Your spot is held. Pay in cash at Cafe Tancha before the event, or at check-in on the day.";
+    $("d-callout").innerHTML = "<b>Bring " + amount + " in cash</b> to Cafe Tancha (" +
+      esc(CONFIG.tanchaHours) + ") or to check-in on 3 November. " +
+      esc(CONFIG.cashNote) + " Just give your name when you pay.";
+  }
+
+  $("d-slip").innerHTML = rows.map(r =>
+    '<div class="payrow"><dt>'+r[0]+'</dt><dd>'+r[1]+'</dd></div>').join("");
+  $("d-contact").innerHTML = "<b>Save these details now</b> - use the button above or " +
+    "screenshot this page. We do not send a confirmation email.";
+
+  window.scrollTo({top: $("s-signup").offsetTop - 20, behavior: "smooth"});
+}
+
+refresh();
+if (registrationClosed()) showClosed();
+
+setInterval(() => {
+  if (registrationClosed()) { showClosed(); return; }
+  if (earlyBirdClosed() &&
+      document.querySelector('[name="payment"][value="transfer"]')) {
+    renderPayOptions();
+    refresh();
+  }
+}, 300000);
+</script>
+</div></div>
+<script src="../../static/theme.js?v=4c67350c"></script>
+<script data-goatcounter="https://oiststudentcouncil.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
